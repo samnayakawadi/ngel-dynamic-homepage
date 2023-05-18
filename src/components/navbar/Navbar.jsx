@@ -1,11 +1,11 @@
-const Navbar = ({ dynamicContextState, navbarHandlers }) => {
+const Navbar = ({ dynamicContextState, navbarHandlers, globalContextState, lang }) => {
 
     return (
         <div className="py-2">
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <div className="navbar-item is-flex is-flex-direction-row is-justify-content-center" >
-                        <img src={`http://samnayakawadi.hyderabad.cdac.in:8093/files/download/${dynamicContextState.eng.megh_Logo.link}`} alt="d" width={130} />
+                        <img src={`${globalContextState.server.uploads}/files/download/${dynamicContextState.eng.megh_Logo.link}`} alt="d" width={130} />
                     </div>
                     <button className="button">
                         <i class="fa-solid fa-pen"></i>
@@ -17,14 +17,14 @@ const Navbar = ({ dynamicContextState, navbarHandlers }) => {
                             <div className="buttons">
                                 {/* eslint-disable-next-line */}
                                 <a className="button is-primary">
-                                    <strong>{dynamicContextState.eng.call_us_phone.value}</strong>
+                                    <strong>{dynamicContextState[lang].call_us_phone.value}</strong>
                                 </a>
                                 <button className="button">
                                     <i class="fa-solid fa-pen"></i>
                                 </button>
                                 {/* eslint-disable-next-line */}
                                 <a className="button is-light">
-                                    {dynamicContextState.eng.enquiry_us_id.value}
+                                    {dynamicContextState[lang].enquiry_us_id.value}
                                 </a>
                                 <button className="button">
                                     <i class="fa-solid fa-pen"></i>
