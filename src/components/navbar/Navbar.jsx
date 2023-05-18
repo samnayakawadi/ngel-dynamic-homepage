@@ -1,7 +1,7 @@
 const Navbar = ({ dynamicContextState, navbarHandlers, globalContextState, lang }) => {
 
     return (
-        <div className="py-2">
+        <div>
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <div className="navbar-item is-flex is-flex-direction-row is-justify-content-center" >
