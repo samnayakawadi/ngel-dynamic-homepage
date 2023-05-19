@@ -1,20 +1,21 @@
 import { useContext } from "react"
 import { GlobalContext } from "../../context/GlobalContext"
 
-const HeaderHandlers = () => {
+const GlobalHandlers = () => {
 
     const { setGlobalContextState } = useContext(GlobalContext)
 
     const updateGlobalLanguageHandler = (e) => {
+        console.log("lang", e.target.value)
         setGlobalContextState(prevState => { return { ...prevState, lang: e.target.value } })
     }
 
-    const headerHandlers = {
+    const globalHandlers = {
         updateGlobalLanguageHandler
     }
 
-    return { headerHandlers }
+    return { globalHandlers }
 
 }
 
-export default HeaderHandlers
+export default GlobalHandlers

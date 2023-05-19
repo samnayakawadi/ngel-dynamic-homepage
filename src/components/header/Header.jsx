@@ -1,4 +1,4 @@
-const Header = ({ headerHandlers, globalContextState }) => {
+const Header = ({ globalHandlers, globalContextState }) => {
     return (
         <div className="p-2">
             <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -8,7 +8,7 @@ const Header = ({ headerHandlers, globalContextState }) => {
                     <div className="navbar-end">
 
                         <div className="select">
-                            <select name="lang" value={globalContextState.lang} onChange={headerHandlers.updateGlobalLanguageHandler}>
+                            <select name="lang" value={globalContextState.lang} onChange={globalHandlers.updateGlobalLanguageHandler}>
                                 <option value="eng">English</option>
                                 <option value="hnd">Hindi</option>
                                 <option value="tel">Telugu</option>

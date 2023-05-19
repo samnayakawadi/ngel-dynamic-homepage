@@ -1,4 +1,4 @@
-const Navbar = ({ dynamicContextState, navbarHandlers, globalContextState, lang }) => {
+const Navbar = ({ dynamicContextState, textTypeHandlers, globalContextState, lang }) => {
 
     return (
         <div>
@@ -8,7 +8,7 @@ const Navbar = ({ dynamicContextState, navbarHandlers, globalContextState, lang 
                         <img src={`${globalContextState.server.uploads}/files/download/${dynamicContextState.eng.megh_Logo.link}`} alt="d" width={130} />
                     </div>
                     <button className="button">
-                        <i class="fa-solid fa-pen"></i>
+                        <i className="fa-solid fa-pen"></i>
                     </button>
                 </div>
                 <div id="navbarBasicExample" className="navbar-menu">
@@ -17,17 +17,17 @@ const Navbar = ({ dynamicContextState, navbarHandlers, globalContextState, lang 
                             <div className="buttons">
                                 {/* eslint-disable-next-line */}
                                 <a className="button is-primary">
-                                    <strong>{dynamicContextState[lang].call_us_phone.value}</strong>
+                                    <strong>{dynamicContextState[lang].call_us_now.value}</strong>
                                 </a>
-                                <button className="button">
-                                    <i class="fa-solid fa-pen"></i>
+                                <button className="button" onClick={() => { textTypeHandlers.textTypeModalUpdateHandler("call_us_now") }}>
+                                    <i className="fa-solid fa-pen"></i>
                                 </button>
                                 {/* eslint-disable-next-line */}
                                 <a className="button is-light">
-                                    {dynamicContextState[lang].enquiry_us_id.value}
+                                    {dynamicContextState[lang].enquiry_us.value}
                                 </a>
-                                <button className="button">
-                                    <i class="fa-solid fa-pen"></i>
+                                <button className="button" onClick={() => { textTypeHandlers.textTypeModalUpdateHandler("enquiry_us") }}>
+                                    <i className="fa-solid fa-pen"></i>
                                 </button>
                             </div>
                         </div>

@@ -32,15 +32,15 @@ const DynamicContextState = () => {
             },
             "call_us_now": {
                 "type": "text",
-                "value": "Call Us Now"
+                "value": "हमें अभी फ़ोन करें"
             },
             "call_us_phone": {
                 "type": "text",
-                "value": "fghfghfghfdgh"
+                "value": "01826-222061, 222062"
             },
             "enquiry_us": {
                 "type": "text",
-                "value": "Enquiry Us"
+                "value": "हमसे पूछताछ करें"
             },
             "enquiry_us_id": {
                 "type": "text",
@@ -54,15 +54,15 @@ const DynamicContextState = () => {
             },
             "call_us_now": {
                 "type": "text",
-                "value": "Call Us Now"
+                "value": "ఇప్పుడే మాకు కాల్ చేయండి"
             },
             "call_us_phone": {
                 "type": "text",
-                "value": "43534656456456"
+                "value": "01826-222061, 222062"
             },
             "enquiry_us": {
                 "type": "text",
-                "value": "Enquiry Us"
+                "value": "మమ్మల్ని సంప్రదించండి"
             },
             "enquiry_us_id": {
                 "type": "text",
