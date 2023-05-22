@@ -1,4 +1,4 @@
-const Navbar = ({ dynamicContextState, textTypeHandlers, globalContextState, lang }) => {
+const Navbar = ({ dynamicContextState, textTypeHandlers, globalContextState, lang, fileTypeHandlers }) => {
 
     return (
         <div>
@@ -7,7 +7,7 @@ const Navbar = ({ dynamicContextState, textTypeHandlers, globalContextState, lan
                     <div className="navbar-item is-flex is-flex-direction-row is-justify-content-center" >
                         <img src={`${globalContextState.server.uploads}/files/download/${dynamicContextState.eng.megh_Logo.link}`} alt="d" width={130} />
                     </div>
-                    <button className="button">
+                    <button className="button" onClick={() => { fileTypeHandlers.fileTypeModalUpdateHandler("megh_Logo") }}>
                         <i className="fa-solid fa-pen"></i>
                     </button>
                 </div>

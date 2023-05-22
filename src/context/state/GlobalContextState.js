@@ -5,7 +5,7 @@ const GlobalContextState = () => {
     const defaultGlobalContextState = {
         lang: "eng",
         server: {
-            uploads: "http://samnayakawadi.hyderabad.cdac.in:8093"
+            uploads: "http://localhost:8093"
         },
         modal: {
             status: false,
@@ -14,7 +14,13 @@ const GlobalContextState = () => {
         textModalContent: {
             key: undefined,
             value: undefined
-        }
+        },
+        fileModalContent: {
+            key: undefined,
+            link: undefined,
+            file: []
+        },
+        autoClose: 4000
     }
 
     const [globalContextState, setGlobalContextState] = useState(defaultGlobalContextState)

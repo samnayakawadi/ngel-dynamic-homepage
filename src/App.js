@@ -3,6 +3,8 @@ import DynamicContextState from "./context/state/DynamicContextState";
 import HomeLayouter from "./layouter/HomeLayouter";
 import { GlobalContext } from "./context/GlobalContext";
 import GlobalContextState from "./context/state/GlobalContextState";
+import 'react-toastify/dist/ReactToastify.css';
+import GlobalComponent from "./components/global/GlobalComponent";
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
           defaultDynamicContextState, dynamicContextState, setDynamicContextState,
         }}>
           <HomeLayouter />
+          <GlobalComponent />
         </DynamicContext.Provider>
       </GlobalContext.Provider>
     </div>
