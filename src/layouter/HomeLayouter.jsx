@@ -10,12 +10,15 @@ import TextTypeHandlers from "../components/handlers/TextTypeHandlers"
 import GlobalHandlers from "../components/handlers/GlobalHandlers"
 import FileTypeModal from "../components/modals/FileTypeModal"
 import FileTypeHandlers from "../components/handlers/FileTypeHandlers"
+import LinkTypeModal from "../components/modals/LinkTypeModal"
+import LinkTypeHandlers from "../components/handlers/LinkTypeHandlers"
 
 const HomeLayouter = () => {
 
     const { globalHandlers } = GlobalHandlers()
     const { textTypeHandlers } = TextTypeHandlers()
     const { fileTypeHandlers } = FileTypeHandlers()
+    const { linkTypeHandlers } = LinkTypeHandlers()
 
     const { dynamicContextState } = useContext(DynamicContext)
     const { globalContextState } = useContext(GlobalContext)
@@ -24,10 +27,11 @@ const HomeLayouter = () => {
         <div>
             <TextTypeModal globalContextState={globalContextState} textTypeHandlers={textTypeHandlers} />
             <FileTypeModal globalContextState={globalContextState} fileTypeHandlers={fileTypeHandlers} />
+            <LinkTypeModal globalContextState={globalContextState} linkTypeHandlers={linkTypeHandlers}/>
             <Header globalHandlers={globalHandlers} globalContextState={globalContextState} />
             <Navbar dynamicContextState={dynamicContextState} textTypeHandlers={textTypeHandlers} globalContextState={globalContextState} lang={globalContextState.lang} fileTypeHandlers={fileTypeHandlers} />
             <Carousel />
-            <Footer />
+            <Footer dynamicContextState={dynamicContextState} globalContextState={globalContextState} lang={globalContextState.lang} linkTypeHandlers={linkTypeHandlers}/>
         </div>
     )
 }

@@ -20,6 +20,11 @@ const GlobalContextState = () => {
             link: undefined,
             file: []
         },
+        linkModalContent: {
+            key: undefined,
+            title: undefined,
+            link: undefined
+        },
         autoClose: 4000
     }
 

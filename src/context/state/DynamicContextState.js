@@ -12,18 +12,15 @@ const DynamicContextState = () => {
                 "type": "text",
                 "value": "Call Us Now"
             },
-            "call_us_phone": {
-                "type": "text",
-                "value": "01826-222061, 222062"
-            },
             "enquiry_us": {
                 "type": "text",
                 "value": "Enquiry Us"
             },
-            "enquiry_us_id": {
-                "type": "text",
-                "value": "itcell.ppa@punjabpolice.gov.in"
-            },
+            "footerHelp": {
+                "type": "link",
+                "title": "MeghSikshak 3.0",
+                "link": "https://www.meghsikshak.in"
+            }
         },
         "hnd": {
             "megh_Logo": {
@@ -34,17 +31,9 @@ const DynamicContextState = () => {
                 "type": "text",
                 "value": "हमें अभी फ़ोन करें"
             },
-            "call_us_phone": {
-                "type": "text",
-                "value": "01826-222061, 222062"
-            },
             "enquiry_us": {
                 "type": "text",
                 "value": "हमसे पूछताछ करें"
-            },
-            "enquiry_us_id": {
-                "type": "text",
-                "value": "itcell.ppa@punjabpolice.gov.in"
             },
         },
         "tel": {
@@ -56,17 +45,9 @@ const DynamicContextState = () => {
                 "type": "text",
                 "value": "ఇప్పుడే మాకు కాల్ చేయండి"
             },
-            "call_us_phone": {
-                "type": "text",
-                "value": "01826-222061, 222062"
-            },
             "enquiry_us": {
                 "type": "text",
                 "value": "మమ్మల్ని సంప్రదించండి"
-            },
-            "enquiry_us_id": {
-                "type": "text",
-                "value": "itcell.ppa@punjabpolice.gov.in"
             },
         }
     }
