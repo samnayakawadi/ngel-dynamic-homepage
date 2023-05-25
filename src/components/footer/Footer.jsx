@@ -6,9 +6,9 @@ const Footer = ({ dynamicContextState, globalContextState, lang, linkTypeHandler
                     <p>
                         <a href={`${dynamicContextState[lang].footerHelp.link}`}>{dynamicContextState[lang].footerHelp.title}</a>
                         {/* eslint-disable-next-line */}
-                        <button className="button ml-2" onClick={() => { linkTypeHandlers.linkTypeModalUpdateHandler("footerHelp") }}>
+                        {globalContextState.editMode && <button className="button ml-2" onClick={() => { linkTypeHandlers.linkTypeModalUpdateHandler("footerHelp") }}>
                             <i className="fa-solid fa-pen"></i>
-                        </button>
+                        </button>}
                     </p>
                 </div>
             </footer>

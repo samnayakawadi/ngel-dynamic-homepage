@@ -7,9 +7,9 @@ const Navbar = ({ dynamicContextState, textTypeHandlers, globalContextState, lan
                     <div className="navbar-item is-flex is-flex-direction-row is-justify-content-center" >
                         <img src={`${globalContextState.server.uploads}/files/download/${dynamicContextState.eng.megh_Logo.link}`} alt="d" width={130} />
                     </div>
-                    <button className="button" onClick={() => { fileTypeHandlers.fileTypeModalUpdateHandler("megh_Logo") }}>
+                    {globalContextState.editMode && <button className="button" onClick={() => { fileTypeHandlers.fileTypeModalUpdateHandler("megh_Logo") }}>
                         <i className="fa-solid fa-pen"></i>
-                    </button>
+                    </button>}
                 </div>
                 <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-end">
@@ -19,16 +19,16 @@ const Navbar = ({ dynamicContextState, textTypeHandlers, globalContextState, lan
                                 <a className="button is-primary">
                                     <strong>{dynamicContextState[lang].call_us_now.value}</strong>
                                 </a>
-                                <button className="button" onClick={() => { textTypeHandlers.textTypeModalUpdateHandler("call_us_now") }}>
+                                {globalContextState.editMode && <button className="button" onClick={() => { textTypeHandlers.textTypeModalUpdateHandler("call_us_now") }}>
                                     <i className="fa-solid fa-pen"></i>
-                                </button>
+                                </button>}
                                 {/* eslint-disable-next-line */}
                                 <a className="button is-light">
                                     {dynamicContextState[lang].enquiry_us.value}
                                 </a>
-                                <button className="button" onClick={() => { textTypeHandlers.textTypeModalUpdateHandler("enquiry_us") }}>
+                                {globalContextState.editMode && <button className="button" onClick={() => { textTypeHandlers.textTypeModalUpdateHandler("enquiry_us") }}>
                                     <i className="fa-solid fa-pen"></i>
-                                </button>
+                                </button>}
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,8 @@ const GlobalContextState = () => {
             title: undefined,
             link: undefined
         },
-        autoClose: 4000
+        autoClose: 4000,
+        editMode: false
     }
 
     const [globalContextState, setGlobalContextState] = useState(defaultGlobalContextState)

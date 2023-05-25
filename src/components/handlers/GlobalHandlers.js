@@ -9,8 +9,13 @@ const GlobalHandlers = () => {
         setGlobalContextState(prevState => { return { ...prevState, lang: e.target.value } })
     }
 
+    const editModeChangeHandler = () => {
+        setGlobalContextState(prevState => { return { ...prevState, editMode: !prevState.editMode } })
+    }
+
     const globalHandlers = {
-        updateGlobalLanguageHandler
+        updateGlobalLanguageHandler,
+        editModeChangeHandler
     }
 
     return { globalHandlers }

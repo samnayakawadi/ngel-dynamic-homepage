@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import Carousel from "../components/content/carousel/Carousel"
 import Footer from "../components/footer/Footer"
 import Navbar from "../components/navbar/Navbar"
 import { DynamicContext } from "../context/DynamicContext"
@@ -28,9 +27,9 @@ const HomeLayouter = () => {
             <TextTypeModal globalContextState={globalContextState} textTypeHandlers={textTypeHandlers} />
             <FileTypeModal globalContextState={globalContextState} fileTypeHandlers={fileTypeHandlers} />
             <LinkTypeModal globalContextState={globalContextState} linkTypeHandlers={linkTypeHandlers}/>
+
             <Header globalHandlers={globalHandlers} globalContextState={globalContextState} />
             <Navbar dynamicContextState={dynamicContextState} textTypeHandlers={textTypeHandlers} globalContextState={globalContextState} lang={globalContextState.lang} fileTypeHandlers={fileTypeHandlers} />
-            <Carousel />
             <Footer dynamicContextState={dynamicContextState} globalContextState={globalContextState} lang={globalContextState.lang} linkTypeHandlers={linkTypeHandlers}/>
         </div>
     )

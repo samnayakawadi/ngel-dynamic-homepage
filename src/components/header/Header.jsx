@@ -15,6 +15,14 @@ const Header = ({ globalHandlers, globalContextState }) => {
                             </select>
                         </div>
 
+                        <div>
+                            <button className="button ml-2 is-danger" onClick={globalHandlers.editModeChangeHandler}>Edit</button>
+                        </div>
+
+                        {globalContextState.editMode && <div>
+                            <button className="button ml-2 is-success">Save</button>
+                        </div>}
+
                     </div>
                 </div>
             </nav>
