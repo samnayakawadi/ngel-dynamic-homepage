@@ -1,4 +1,4 @@
-const TextTypeModal = ({ globalContextState, textTypeHandlers }) => {
+const TextTypeModal = ({ globalContextState, textTypeHandlers, validationState, validationHandlers }) => {
 
     return (
         <div>
@@ -11,7 +11,8 @@ const TextTypeModal = ({ globalContextState, textTypeHandlers }) => {
                         </div>
                         <hr />
                         <div>
-                            <input className="input is-primary" value={globalContextState.textModalContent.value} onChange={textTypeHandlers.textTypeDataUpdateHandler} type="text" placeholder="Enter The Text To Update" />
+                            <input className={`input ${validationState.textModalContent.value !== undefined && "is-danger"}`} value={globalContextState.textModalContent.value} onChange={(e) => { textTypeHandlers.textTypeDataUpdateHandler(e); validationHandlers.textTypeValidatorHandler(e.target.value) }} type="text" placeholder="Enter The Text To Update" />
+                            <p className="help is-danger has-text-left">{validationState.textModalContent.value}</p>
                         </div>
                         <hr />
                         <div className="columns is-centered is-vcentered">

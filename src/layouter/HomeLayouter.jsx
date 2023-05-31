@@ -11,6 +11,8 @@ import FileTypeModal from "../components/modals/FileTypeModal"
 import FileTypeHandlers from "../components/handlers/FileTypeHandlers"
 import LinkTypeModal from "../components/modals/LinkTypeModal"
 import LinkTypeHandlers from "../components/handlers/LinkTypeHandlers"
+import { ValidationContext } from "../context/ValidationContext"
+import ValidationHandlers from "../components/validations/ValidationHandlers"
 
 const HomeLayouter = () => {
 
@@ -19,18 +21,21 @@ const HomeLayouter = () => {
     const { fileTypeHandlers } = FileTypeHandlers()
     const { linkTypeHandlers } = LinkTypeHandlers()
 
+    const { validationHandlers } = ValidationHandlers()
+
     const { dynamicContextState } = useContext(DynamicContext)
     const { globalContextState } = useContext(GlobalContext)
+    const { validationState } = useContext(ValidationContext)
 
     return (
         <div>
-            <TextTypeModal globalContextState={globalContextState} textTypeHandlers={textTypeHandlers} />
+            <TextTypeModal globalContextState={globalContextState} textTypeHandlers={textTypeHandlers} validationState={validationState} validationHandlers={validationHandlers}/>
             <FileTypeModal globalContextState={globalContextState} fileTypeHandlers={fileTypeHandlers} />
-            <LinkTypeModal globalContextState={globalContextState} linkTypeHandlers={linkTypeHandlers}/>
+            <LinkTypeModal globalContextState={globalContextState} linkTypeHandlers={linkTypeHandlers} />
 
             <Header globalHandlers={globalHandlers} globalContextState={globalContextState} />
             <Navbar dynamicContextState={dynamicContextState} textTypeHandlers={textTypeHandlers} globalContextState={globalContextState} lang={globalContextState.lang} fileTypeHandlers={fileTypeHandlers} />
-            <Footer dynamicContextState={dynamicContextState} globalContextState={globalContextState} lang={globalContextState.lang} linkTypeHandlers={linkTypeHandlers}/>
+            <Footer dynamicContextState={dynamicContextState} globalContextState={globalContextState} lang={globalContextState.lang} linkTypeHandlers={linkTypeHandlers} />
         </div>
     )
 }

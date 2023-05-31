@@ -1,11 +1,15 @@
 import { useContext } from "react"
 import { DynamicContext } from "../../context/DynamicContext"
 import { GlobalContext } from "../../context/GlobalContext"
+import ValidationHandlers from "../validations/ValidationHandlers"
+import { toast } from "react-toastify"
 
 const TextTypeHandlers = () => {
 
     const { dynamicContextState, setDynamicContextState } = useContext(DynamicContext)
     const { globalContextState, setGlobalContextState } = useContext(GlobalContext)
+
+    const { validationHandlers } = ValidationHandlers()
 
     const textTypeModalUpdateHandler = (key) => {
         const lang = globalContextState.lang
@@ -19,11 +23,17 @@ const TextTypeHandlers = () => {
     }
 
     const textTypeDataSubmitHandler = () => {
-        const lang = globalContextState.lang
-        const key = globalContextState.textModalContent.key
-        const value = globalContextState.textModalContent.value
-        setDynamicContextState(prevState => { return { ...prevState, [lang]: { ...prevState[lang], [key]: { ...prevState[lang][key], value: value } } } })
-        textTypeModalResetHandler()
+
+        if (validationHandlers.textTypeValidateAll()) {
+            const lang = globalContextState.lang
+            const key = globalContextState.textModalContent.key
+            const value = globalContextState.textModalContent.value
+            setDynamicContextState(prevState => { return { ...prevState, [lang]: { ...prevState[lang], [key]: { ...prevState[lang][key], value: value } } } })
+            textTypeModalResetHandler()
+        }
+        else {
+            toast.error("Validation Error")
+        }
     }
 
     const textTypeModalResetHandler = () => {
