@@ -1,0 +1,480 @@
+{
+	"cdac_address": {
+		"type": "text",
+		"value": "Maharaja Ranjit Singh Punjab Police Academy 234",
+		"regex": "^[A-Za-z0-9\\s&()-;'\",./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;'\",./?+)) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"have_questions": {
+		"type": "text",
+		"value": "Have Questions",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"log_in": {
+		"type": "text",
+		"value": "Log In",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"register": {
+		"type": "text",
+		"value": "Register",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"megh_Logo": {
+		"type": "file",
+		"link": "64929d34fa3ba95cea1e741a",
+		"regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
+		"errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
+		"maxLength": 1048576
+	},
+	"call_us_now": {
+		"type": "text",
+		"value": "Call Us Now",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"call_us_phone": {
+		"type": "link",
+		"title": {
+			"value": "+910182622206",
+			"regex": "^\\+\\d+$",
+			"errorMessage": "Only numbers are allowed with the symbol (+)",
+			"minLength": "13",
+			"maxLength": "13"
+		},
+		"link": {
+			"value": "tel:+910182622206",
+			"regex": "^tel:\\+\\d+$",
+			"errorMessage": "Only acceptable format (tel:+Number) and Number exactly 10 digits.",
+			"minLength": "17",
+			"maxLength": "17"
+		}
+	},
+	"enquiry_us": {
+		"type": "text",
+		"value": "Enquiry Us 12345",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"enquiry_us_id": {
+		"type": "link",
+		"title": {
+			"value": "itcell.ppa@punjabpolice.gov.in",
+			"regex": "^[\\w.]+@[a-zA-Z0-9.]+\\.[a-zA-Z]{2,}$",
+			"errorMessage": "Email-Id is not valid and only special characters ('@', '.') are allowed",
+			"minLength": null,
+			"maxLength": null
+		},
+		"link": {
+			"value": "mailto:itcell.ppa@punjabpolice.gov.in",
+			"regex": "^mailto:[\\w.]+@[a-zA-Z0-9.]+\\.[a-zA-Z]{2,}$",
+			"errorMessage": "Only acceptable format (mailto:Email-Id)",
+			"minLength": null,
+			"maxLength": null
+		}
+	},
+	"home": {
+		"type": "text",
+		"value": "Home",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"about_us": {
+		"type": "text",
+		"value": "About us",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"courses": {
+		"type": "text",
+		"value": "Courses",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"carousel_img1": {
+		"type": "file",
+		"link": "64929d55fa3ba95cea1e741b",
+		"regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
+		"errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
+		"maxLength": 1048576
+	},
+	"carousel_img2": {
+		"type": "file",
+		"link": "6492a16cfa3ba95cea1e7422",
+		"regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
+		"errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
+		"maxLength": 1048576
+	},
+	"carousel_img3": {
+		"type": "file",
+		"link": "64929d74fa3ba95cea1e741d",
+		"regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
+		"errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
+		"maxLength": 1048576
+	},
+	"carousel_img4": {
+		"type": "file",
+		"link": "64929d8afa3ba95cea1e741e",
+		"regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
+		"errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
+		"maxLength": 1048576
+	},
+	"carousel_img5": {
+		"type": "file",
+		"link": "64929d96fa3ba95cea1e741f",
+		"regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
+		"errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
+		"maxLength": 1048576
+	},
+	"popular_courses": {
+		"type": "text",
+		"value": "Top Rated Courses",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"popular_courses_desc": {
+		"type": "text",
+		"value": "PPA offers online courses for Police training",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]*$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?)) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"modern_library": {
+		"type": "text",
+		"value": "E-Library",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"modern_library_desc": {
+		"type": "text",
+		"value": "The E-Library of the World's Best Books",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]*$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?)) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"qualified_teacher": {
+		"type": "text",
+		"value": "Best Training",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"qualified_teacher_desc": {
+		"type": "text",
+		"value": "Interactive Training by Experienced Faculty",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]*$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?)) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"hOPPA_image": {
+		"type": "file",
+		"link": "64929da6fa3ba95cea1e7420",
+		"regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
+		"errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
+		"maxLength": 1048576
+	},
+	"title": {
+		"type": "text",
+		"value": "HISTORY OF PUNJAB POLICE ACADEMY, PHILLAUR",
+		"regex": "^[A-Za-z0-9\\s&-;',./?]+$",
+		"errorMessage": "Only characters and symbols ( &-;',./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"about_desc1": {
+		"type": "text",
+		"value": "Prior to the enactment of the Police Act of 1861, the Punjab Police was known as 'Military Police Force' and it consisted of 8100 men. Out of these, 5400 were infantry divided into six Battalions and the remaining 2700 were the cavalry. The Punjab, the sword-arm of India, however, needed a superior force for its internal administration. The Police Act of 1861 came into force in Punjab with effect from the 1st January, 1890.",
+		"regex": "^[A-Za-z0-9\\s&()-;',./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;',./?+)) are allowed",
+		"minLength": 10,
+		"maxLength": 600
+	},
+	"about_desc2": {
+		"type": "text",
+		"value": "The Police Training School was established in the Phillaur Fort by a Home Department notification dated 9th September, 1891, with a meager staff under Mr. J.M. Bishop, I.P., Assistant District Superintendent of Police. The School started functioning with effect from the 1st January, 1892. Thus Punjab became the first state in the country to establish such a school. Most of the other training schools were set up after the report of the Police Commission, appointed in 1902 by Lord Cuzon.",
+		"regex": "^[A-Za-z0-9\\s&()-;',./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;',./?+)) are allowed",
+		"minLength": 10,
+		"maxLength": 600
+	},
+	"happy_students": {
+		"type": "text",
+		"value": "Happy Students",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"teachers": {
+		"type": "text",
+		"value": "Teachers",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"read_more": {
+		"type": "text",
+		"value": "Read More",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"info_title": {
+		"type": "text",
+		"value": "Let us See What Our Trainees Think About Us Their Testimonials.",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;,'\"./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"view_all_courses": {
+		"type": "text",
+		"value": "View All Courses",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?+)) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"upcoming": {
+		"type": "text",
+		"value": "Upcoming",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"events": {
+		"type": "text",
+		"value": "Events",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"frequently_ask": {
+		"type": "text",
+		"value": "Frequently Ask",
+		"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+		"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"question": {
+		"type": "text",
+		"value": "Question",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?+)) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"faq_titile_1": {
+		"type": "text",
+		"value": "What is the USP or benefits of enrolling to the courses?",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?+)) are allowed",
+		"minLength": 1,
+		"maxLength": 500
+	},
+	"faq_desc_1": {
+		"type": "text",
+		"value": "C-DAC's industry skilling courses are designed, developed, and mentored by R&D experts who have vast experience in implementing real-time projects. These courses give an insight into the end-to-end project life cycle as per industry standards and processes.",
+		"regex": "^[A-Za-z0-9\\s&()-;:',\"./?]*$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;:',\"./?)) are allowed",
+		"minLength": 1,
+		"maxLength": 500
+	},
+	"faq_titile_2": {
+		"type": "text",
+		"value": "Who are eligible for enrolling to the courses?",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?+)) are allowed",
+		"minLength": 1,
+		"maxLength": 500
+	},
+	"faq_desc_2": {
+		"type": "text",
+		"value": "Anyone interested can enroll in the courses. Candidates from Electronics, Electrical, Instrumentation, Computer Science, Information Technology, or from any equivalent discipline can enroll.",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?)) are allowed",
+		"minLength": 1,
+		"maxLength": 500
+	},
+	"faq_titile_3": {
+		"type": "text",
+		"value": "Who are eligible for enrolling to the courses?",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?+)) are allowed",
+		"minLength": 1,
+		"maxLength": 500
+	},
+	"faq_desc_3": {
+		"type": "text",
+		"value": "Anyone interested can enroll in the courses. Candidates from Electronics, Electrical, Instrumentation, Computer Science, Information Technology, or from any equivalent discipline can enroll.",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?)) are allowed",
+		"minLength": 1,
+		"maxLength": 500
+	},
+	"card_title": {
+		"type": "text",
+		"value": "Dipak Nagare",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"card_desc": {
+		"type": "text",
+		"value": "This card is created for practice",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"card_btn": {
+		"type": "text",
+		"value": "Go somewhere",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"cA": {
+		"type": "text",
+		"value": "Company Address",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"cdac_full_address": {
+		"type": "text",
+		"value": "Maharaja Ranjit Singh Punjab Police Academy, Phillaur Distt - Jalandhar, Punjab, India 144410",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?+)) are allowed",
+		"minLength": 5,
+		"maxLength": 250
+	},
+	"copyright": {
+		"type": "text",
+		"value": "© 2023 Copyright",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"design_develop": {
+		"type": "text",
+		"value": "Centre for Development of Advanced Computing C-DAC",
+		"regex": "^[A-Za-z0-9\\s&()-;,'\"./?]+$",
+		"errorMessage": "Only (characters, numbers, symbols (&()-;,'\"./?+)) are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	},
+	"usefull_links": {
+		"type": "Useful Links",
+		"value": "Centre for Development of Advanced Computing C-DAC",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"footerPoweredBy": {
+		"type": "Link",
+		"title": {
+			"value": "Powered By",
+			"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+			"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+			"minLength": "1",
+			"maxLength": "250"
+		},
+		"link": {
+			"value": "https://www.google.com",
+			"regex": "\\bhttps?:\\/\\/\\S+\\b",
+			"errorMessage": "Enter a valid URL",
+			"minLength": "1",
+			"maxLength": "250"
+		}
+	},
+	"footerMeghS": {
+		"type": "Link",
+		"title": {
+			"value": "MeghSikshak",
+			"regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
+			"errorMessage": "Only characters and symbols ( &()-;'\",./?+) are allowed",
+			"minLength": "1",
+			"maxLength": "250"
+		},
+		"link": {
+			"value": "https://www.meghshikshak.com",
+			"regex": "\\bhttps?:\\/\\/\\S+\\b",
+			"errorMessage": "Enter a valid URL",
+			"minLength": "1",
+			"maxLength": "250"
+		}
+	},
+	"footerHelp": {
+		"type": "Link",
+		"title": {
+			"value": "Help",
+			"regex": "^[A-Za-z\\s&()\\-;,'\"./?]+$",
+			"errorMessage": "Only characters and Symbols ( &-;'\",./?+) are allowed",
+			"minLength": "1",
+			"maxLength": "250"
+		},
+		"link": {
+			"value": "https://www.cdac.in/index.aspx?ID=HY",
+			"regex": "\\bhttps?:\\/\\/\\S+\\b",
+			"errorMessage": "Enter a valid URL",
+			"minLength": "1",
+			"maxLength": "250"
+		}
+	},
+	"powerby1": {
+		"type": "text",
+		"value": "Powered By",
+		"regex": null,
+		"errorMessage": null,
+		"minLength": null,
+		"maxLength": null
+	},
+	"megh1": {
+		"type": "text",
+		"value": "MeghSikshak",
+		"regex": "^[A-Za-z\\s&()\\-;,'\"./?]+$",
+		"errorMessage": "Only characters are allowed",
+		"minLength": 1,
+		"maxLength": 250
+	}
+}
