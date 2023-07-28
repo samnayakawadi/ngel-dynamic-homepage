@@ -11,6 +11,6 @@ public interface ContentService {
 
     ContentModel getContentModel(String language);
 
-    GlobalReponse updateContentModel(ContentModelDTO contentModelDTO, String language);
+    GlobalReponse updateContentModel(ContentModelDTO contentModelDTO, String language) throws IllegalArgumentException, IllegalAccessException;
 
 }

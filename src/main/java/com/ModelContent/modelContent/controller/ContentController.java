@@ -42,7 +42,7 @@ public class ContentController {
 	// return contentService.updateContentModel(contentModelDTO, language);
 	// }
 	@PutMapping("/{language}")
-	public GlobalReponse updateContentModel( @PathVariable String language, @Valid @RequestBody ContentModelDTO contentModelDTO) {
+	public GlobalReponse updateContentModel( @PathVariable String language, @Valid @RequestBody ContentModelDTO contentModelDTO) throws IllegalArgumentException, IllegalAccessException {
 		return contentService.updateContentModel(contentModelDTO, language);
 	}
 

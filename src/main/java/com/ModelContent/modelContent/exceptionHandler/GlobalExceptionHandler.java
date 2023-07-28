@@ -43,4 +43,17 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(new ValidationErrorResponse("406", "Resolve Errors", resp),
                 HttpStatus.NOT_ACCEPTABLE);
     }
+
+    @ExceptionHandler(value = GlobalCustomException.class)
+    public ResponseEntity<Object> globalCustomExceptionHandler(GlobalCustomException e) {
+        return new ResponseEntity<>(e.getGlobalResponse(),
+                e.getHttpStatus());
+    }
+
+    @ExceptionHandler(value = GlobalValidationException.class)
+    public ResponseEntity<Object> globalValidationExceptionHandler(GlobalValidationException e) {
+        return new ResponseEntity<>(e.getGlobalValidationResponse(),
+                e.getHttpStatus());
+    }
+
 }

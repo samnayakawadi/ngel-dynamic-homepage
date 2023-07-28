@@ -1,15 +1,25 @@
 package com.ModelContent.modelContent.service.Implementation;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.File;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
+import com.ModelContent.modelContent.document.ContentModel.linkTypeContent.LinkTypeContent;
+import com.ModelContent.modelContent.document.ContentModel.textTypeContent.TextTypeContent;
 import com.ModelContent.modelContent.dto.ContentModelDTO;
+import com.ModelContent.modelContent.dto.data.TextTypeContentDTO;
+import com.ModelContent.modelContent.dto.data.LinkTypeDto.LinkTypeContentDTO;
+import com.ModelContent.modelContent.exceptionHandler.GlobalValidationException;
 import com.ModelContent.modelContent.model.ContentModel;
 import com.ModelContent.modelContent.response.GlobalReponse;
+import com.ModelContent.modelContent.response.GlobalValidationResponse;
 import com.ModelContent.modelContent.service.main.ContentService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -22,8 +32,8 @@ public class ContentServiceImpl implements ContentService {
 	}
 
 	@Override
-	public GlobalReponse updateContentModel(ContentModelDTO contentModelDTO, String language) {
-		// ContentModel contentModel = convertToEntity(contentModelDTO);
+	public GlobalReponse updateContentModel(ContentModelDTO contentModelDTO, String language)
+			throws IllegalArgumentException, IllegalAccessException {
 
 		ContentModel existingContent = loadContentFromFile(language);
 
@@ -31,10 +41,7 @@ public class ContentServiceImpl implements ContentService {
 			return new GlobalReponse(400, "JSON Parse Error");
 		}
 
-		// if (!checkRegexWithValue(existingContent.getCdac_address().getRegex(),
-		// 		contentModelDTO.getCdac_address().getValue())) {
-		// 			// throw new Glo("cdac_address does not")
-		// }
+		checkForValidationForContentModelDTO(existingContent, contentModelDTO);
 
 		// Total 56 Keys are request to set
 		existingContent.getCdac_address().setValue(contentModelDTO.getCdac_address().getValue());
@@ -100,16 +107,12 @@ public class ContentServiceImpl implements ContentService {
 			return new GlobalReponse(500, "Failed to update data");
 		}
 
-		// return new GlobalReponse(200, "Data updated successfully SSS");
-
 	}
 
-	public Boolean checkRegexWithValue(String regex, String value) {
-		// String regexPattern =
-		// "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b";
+	public boolean checkRegexWithValue(String regex, String value) {
+
 		Pattern pattern = Pattern.compile(regex);
 
-		// String inputString = "john.doe@example.com";
 		Matcher matcher = pattern.matcher(value);
 
 		return matcher.matches();
@@ -143,8 +146,74 @@ public class ContentServiceImpl implements ContentService {
 
 	private String getFilePath(String language) {
 		String fileName = language.toLowerCase() + ".json";
-		return "C:\\Users\\q\\Desktop\\Dynamic NGEL Backend\\Dynamic NGEL Backend\\src\\main\\java\\com\\ModelContent\\modelContent\\json\\"
-				+ fileName;
-		// return "C:\\Users\\samnayakawadi\\Downloads\\" + fileName;
+		return "C:\\Users\\samnayakawadi\\Downloads\\" + fileName;
+	}
+
+	public void checkForValidationForContentModelDTO(ContentModel existingContent, ContentModelDTO contentModelDTO)
+			throws IllegalArgumentException, IllegalAccessException {
+
+		Field[] existingContentFields = existingContent.getClass().getDeclaredFields();
+		Field[] contentModelFields = contentModelDTO.getClass().getDeclaredFields();
+
+		Map<String, String> errors = new HashMap<>();
+
+		try {
+			int i = 0;
+			for (Field field : existingContentFields) {
+
+				if (field.getType().equals(TextTypeContent.class)) {
+					TextTypeContent existingContentTextTypeModel = (TextTypeContent) field.get(existingContent);
+					TextTypeContentDTO contentModelDTOTextTypeModel = (TextTypeContentDTO) contentModelFields[i]
+							.get(contentModelDTO);
+
+					if (existingContentTextTypeModel.getRegex() != null
+							&& !checkRegexWithValue(existingContentTextTypeModel.getRegex(),
+									contentModelDTOTextTypeModel.getValue())) {
+						errors.put(field.getName(), existingContentTextTypeModel.getErrorMessage());
+					}
+
+				} else if (field.getType().equals(LinkTypeContent.class)) {
+					LinkTypeContent existingLinkTypeContent = (LinkTypeContent) field.get(existingContent);
+					LinkTypeContentDTO contentModelDTOLinkTypeModel = (LinkTypeContentDTO) contentModelFields[i]
+							.get(contentModelDTO);
+
+					if (existingLinkTypeContent.getTitle().getRegex() != null
+							&& !checkRegexWithValue(existingLinkTypeContent.getTitle().getRegex(),
+									contentModelDTOLinkTypeModel.getTitle().getValue())) {
+						errors.put(field.getName() + ".title", existingLinkTypeContent.getTitle().getErrorMessage());
+					}
+
+					if (existingLinkTypeContent.getLink().getRegex() != null
+							&& !checkRegexWithValue(existingLinkTypeContent.getLink().getRegex(),
+									contentModelDTOLinkTypeModel.getLink().getValue())) {
+						errors.put(field.getName() + ".link", existingLinkTypeContent.getLink().getErrorMessage());
+					}
+				}
+
+				i++;
+			}
+		} catch (Exception e) {
+		}
+
+		if (errors.size() != 0) {
+			throw new GlobalValidationException(new GlobalValidationResponse(406, errors),
+					HttpStatus.NOT_ACCEPTABLE);
+		}
 	}
 }
+
+// Important Code for Custom Dynamic Validations for File
+// else if (field.getType().equals(FileTypeContent.class)) {
+// FileTypeContent existingContentFileTypeModel = (FileTypeContent)
+// field.get(existingContent);
+// FileTypeContentDTO contentModelDTOFileTypeModel = (FileTypeContentDTO)
+// contentModelFields[i]
+// .get(contentModelDTO);
+
+// if (existingContentFileTypeModel.getRegex() != null
+// && !checkRegexWithValue(existingContentFileTypeModel.getRegex(),
+// contentModelDTOFileTypeModel.getLink())) {
+// errors.put(field.getName(), existingContentFileTypeModel.getErrorMessage());
+// }
+
+// }

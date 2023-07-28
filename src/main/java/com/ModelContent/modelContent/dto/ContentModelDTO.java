@@ -9,118 +9,117 @@ import jakarta.validation.Valid;
 public class ContentModelDTO {
 
     @Valid
-    private TextTypeContentDTO cdac_address;
+    public TextTypeContentDTO cdac_address;
     @Valid
-    private TextTypeContentDTO have_questions;
+    public TextTypeContentDTO have_questions;
     @Valid
-    private TextTypeContentDTO log_in;
+    public TextTypeContentDTO log_in;
     @Valid
-    private TextTypeContentDTO register;
+    public TextTypeContentDTO register;
     @Valid
-    private FileTypeContentDTO megh_Logo; 
+    public FileTypeContentDTO megh_Logo;
     @Valid
-    private TextTypeContentDTO call_us_now;
+    public TextTypeContentDTO call_us_now;
     @Valid
-    private LinkTypeContentDTO call_us_phone;
+    public LinkTypeContentDTO call_us_phone;
     @Valid
-    private TextTypeContentDTO enquiry_us;
+    public TextTypeContentDTO enquiry_us;
     @Valid
-
-    private LinkTypeContentDTO enquiry_us_id;
+    public LinkTypeContentDTO enquiry_us_id;
     @Valid
-    private TextTypeContentDTO home;
+    public TextTypeContentDTO home;
     @Valid
-    private TextTypeContentDTO about_us;
+    public TextTypeContentDTO about_us;
     @Valid
-    private TextTypeContentDTO courses;
+    public TextTypeContentDTO courses;
     @Valid
-    private FileTypeContentDTO carousel_img1;
+    public FileTypeContentDTO carousel_img1;
     @Valid
-    private FileTypeContentDTO carousel_img2;
+    public FileTypeContentDTO carousel_img2;
     @Valid
-    private FileTypeContentDTO carousel_img3;
+    public FileTypeContentDTO carousel_img3;
     @Valid
-    private FileTypeContentDTO carousel_img4;
+    public FileTypeContentDTO carousel_img4;
     @Valid
-    private FileTypeContentDTO carousel_img5;
+    public FileTypeContentDTO carousel_img5;
     @Valid
-    private TextTypeContentDTO popular_courses;
+    public TextTypeContentDTO popular_courses;
     @Valid
-    private TextTypeContentDTO popular_courses_desc;
+    public TextTypeContentDTO popular_courses_desc;
     @Valid
-    private TextTypeContentDTO modern_library;
+    public TextTypeContentDTO modern_library;
     @Valid
-    private TextTypeContentDTO modern_library_desc;
+    public TextTypeContentDTO modern_library_desc;
     @Valid
-    private TextTypeContentDTO qualified_teacher;
+    public TextTypeContentDTO qualified_teacher;
     @Valid
-    private TextTypeContentDTO qualified_teacher_desc;
+    public TextTypeContentDTO qualified_teacher_desc;
     @Valid
-    private FileTypeContentDTO hOPPA_image;
+    public FileTypeContentDTO hOPPA_image;
     @Valid
-    private TextTypeContentDTO title;
+    public TextTypeContentDTO title;
     @Valid
-    private TextTypeContentDTO about_desc1;
+    public TextTypeContentDTO about_desc1;
     @Valid
-    private TextTypeContentDTO about_desc2;
+    public TextTypeContentDTO about_desc2;
     @Valid
-    private TextTypeContentDTO happy_students;
+    public TextTypeContentDTO happy_students;
     @Valid
-    private TextTypeContentDTO teachers;
+    public TextTypeContentDTO teachers;
     @Valid
-    private TextTypeContentDTO coursess;
+    public TextTypeContentDTO coursess;
     @Valid
-    private TextTypeContentDTO read_more;
+    public TextTypeContentDTO read_more;
     @Valid
-    private TextTypeContentDTO info_title;
+    public TextTypeContentDTO info_title;
     @Valid
-    private TextTypeContentDTO view_all_courses;
+    public TextTypeContentDTO view_all_courses;
     @Valid
-    private TextTypeContentDTO upcoming;
+    public TextTypeContentDTO upcoming;
     @Valid
-    private TextTypeContentDTO events;
+    public TextTypeContentDTO events;
     @Valid
-    private TextTypeContentDTO frequently_ask;
+    public TextTypeContentDTO frequently_ask;
     @Valid
-    private TextTypeContentDTO question;
+    public TextTypeContentDTO question;
     @Valid
-    private TextTypeContentDTO faq_titile_1;
+    public TextTypeContentDTO faq_titile_1;
     @Valid
-    private TextTypeContentDTO faq_desc_1;
+    public TextTypeContentDTO faq_desc_1;
     @Valid
-    private TextTypeContentDTO faq_titile_2;
+    public TextTypeContentDTO faq_titile_2;
     @Valid
-    private TextTypeContentDTO faq_desc_2;
+    public TextTypeContentDTO faq_desc_2;
     @Valid
-    private TextTypeContentDTO faq_titile_3;
+    public TextTypeContentDTO faq_titile_3;
     @Valid
-    private TextTypeContentDTO faq_desc_3;
+    public TextTypeContentDTO faq_desc_3;
     @Valid
-    private TextTypeContentDTO card_title;
+    public TextTypeContentDTO card_title;
     @Valid
-    private TextTypeContentDTO card_desc;
+    public TextTypeContentDTO card_desc;
     @Valid
-    private TextTypeContentDTO card_btn;
+    public TextTypeContentDTO card_btn;
     @Valid
-    private TextTypeContentDTO cA;
+    public TextTypeContentDTO cA;
     @Valid
-    private TextTypeContentDTO cdac_full_address;
+    public TextTypeContentDTO cdac_full_address;
     @Valid
-    private TextTypeContentDTO copyright;
+    public TextTypeContentDTO copyright;
     @Valid
-    private TextTypeContentDTO design_develop;
+    public TextTypeContentDTO design_develop;
     @Valid
-    private TextTypeContentDTO usefull_links;
+    public TextTypeContentDTO usefull_links;
     @Valid
-    private LinkTypeContentDTO footerPoweredBy;
+    public LinkTypeContentDTO footerPoweredBy;
     @Valid
-    private LinkTypeContentDTO footerMeghS;
+    public LinkTypeContentDTO footerMeghS;
     @Valid
-    private LinkTypeContentDTO footerHelp;
+    public LinkTypeContentDTO footerHelp;
     @Valid
-    private TextTypeContentDTO powerby1;
+    public TextTypeContentDTO powerby1;
     @Valid
-    private TextTypeContentDTO megh1;
+    public TextTypeContentDTO megh1;
 
     public ContentModelDTO(TextTypeContentDTO cdac_address, TextTypeContentDTO have_questions,
             TextTypeContentDTO log_in, TextTypeContentDTO register, FileTypeContentDTO megh_Logo,
