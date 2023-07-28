@@ -8,7 +8,10 @@ public class LinkTypeContent {
     private LinkTypeTitleContentData title;
     private LinkTypeLinkcontentData link;
 
+    
+    
     public LinkTypeContent() {
+       
     }
 
     public LinkTypeContent(String type, LinkTypeTitleContentData title, LinkTypeLinkcontentData link) {
@@ -40,5 +43,4 @@ public class LinkTypeContent {
     public void setLink(LinkTypeLinkcontentData link) {
         this.link = link;
     }
-
 }

@@ -1,0 +1,21 @@
+package com.ModelContent.modelContent.dto.data.LinkTypeDto;
+
+public class LinkTypeLinkContentData {
+    private String value;
+
+    public LinkTypeLinkContentData(String value) {
+        this.value = value;
+    }
+
+    public LinkTypeLinkContentData() {
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+}

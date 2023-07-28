@@ -69,5 +69,4 @@ public class TextTypeContent {
     public void setMaxLength(Integer maxLength) {
         this.maxLength = maxLength;
     }
-
 }

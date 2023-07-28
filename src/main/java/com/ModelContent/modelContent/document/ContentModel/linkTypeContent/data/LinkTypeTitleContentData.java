@@ -7,10 +7,7 @@ public class LinkTypeTitleContentData {
     private String minLength;
     private String maxLength;
 
-    
-
     public LinkTypeTitleContentData() {
-      
     }
     
     public LinkTypeTitleContentData(String value, String regex, String errorMessage, String minLength,

@@ -1,9 +1,12 @@
 package com.ModelContent.modelContent.model;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import com.ModelContent.modelContent.document.ContentModel.fileTypeContent.FileTypeContent;
 import com.ModelContent.modelContent.document.ContentModel.linkTypeContent.LinkTypeContent;
 import com.ModelContent.modelContent.document.ContentModel.textTypeContent.TextTypeContent;
 
+@EntityScan
 public class ContentModel {
 	// private String language;
 	private TextTypeContent cdac_address;
@@ -35,6 +38,7 @@ public class ContentModel {
 	private TextTypeContent about_desc2;
 	private TextTypeContent happy_students;
 	private TextTypeContent teachers;
+	private TextTypeContent coursess;
 	private TextTypeContent read_more;
 	private TextTypeContent info_title;
 	private TextTypeContent view_all_courses;
@@ -64,9 +68,8 @@ public class ContentModel {
 
 	public ContentModel() {
 	}
-
-	public ContentModel(TextTypeContent cdac_address, TextTypeContent have_questions, TextTypeContent log_in,
-			TextTypeContent register,
+	
+	public ContentModel(TextTypeContent cdac_address, TextTypeContent have_questions, TextTypeContent log_in,TextTypeContent register,
 			FileTypeContent megh_Logo, TextTypeContent call_us_now, LinkTypeContent call_us_phone,
 			TextTypeContent enquiry_us, LinkTypeContent enquiry_us_id, TextTypeContent home, TextTypeContent about_us,
 			TextTypeContent courses, FileTypeContent carousel_img1, FileTypeContent carousel_img2,
@@ -75,7 +78,7 @@ public class ContentModel {
 			TextTypeContent modern_library_desc, TextTypeContent qualified_teacher,
 			TextTypeContent qualified_teacher_desc, FileTypeContent hOPPA_image, TextTypeContent title,
 			TextTypeContent about_desc1, TextTypeContent about_desc2, TextTypeContent happy_students,
-			TextTypeContent teachers, TextTypeContent read_more, TextTypeContent info_title,
+			TextTypeContent teachers, TextTypeContent coursess, TextTypeContent read_more, TextTypeContent info_title,
 			TextTypeContent view_all_courses, TextTypeContent upcoming, TextTypeContent events,
 			TextTypeContent frequently_ask, TextTypeContent question, TextTypeContent faq_titile_1,
 			TextTypeContent faq_desc_1, TextTypeContent faq_titile_2, TextTypeContent faq_desc_2,
@@ -113,6 +116,7 @@ public class ContentModel {
 		this.about_desc2 = about_desc2;
 		this.happy_students = happy_students;
 		this.teachers = teachers;
+		this.coursess = coursess;
 		this.read_more = read_more;
 		this.info_title = info_title;
 		this.view_all_courses = view_all_courses;
@@ -372,7 +376,15 @@ public class ContentModel {
 	public void setTeachers(TextTypeContent teachers) {
 		this.teachers = teachers;
 	}
+    
+	 public TextTypeContent getCoursess() {
+		return coursess;
+	}
 
+	public void setCoursess(TextTypeContent coursess) {
+		this.coursess = coursess;
+	}
+	
 	public TextTypeContent getRead_more() {
 		return read_more;
 	}
@@ -581,16 +593,21 @@ public class ContentModel {
 		this.megh1 = megh1;
 	}
 
+	
+   
+	
+	
+
 	// public ContentModel(TextTypeContent cdac_address) {
-	// this.cdac_address = cdac_address;
+	// 	this.cdac_address = cdac_address;
 	// }
 
 	// public TextTypeContent getCdac_address() {
-	// return this.cdac_address;
+	// 	return this.cdac_address;
 	// }
 
 	// public void setCdac_address(TextTypeContent cdac_address) {
-	// this.cdac_address = cdac_address;
+	// 	this.cdac_address = cdac_address;
 	// }
 
 }
