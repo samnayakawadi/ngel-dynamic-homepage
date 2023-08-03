@@ -31,6 +31,5 @@ public class GlobalCustomException extends RuntimeException {
 
     public void setGlobalResponse(GlobalReponse globalResponse) {
         this.globalResponse = globalResponse;
-    }
-
+    } 
 }

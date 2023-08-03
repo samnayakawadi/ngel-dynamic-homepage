@@ -245,7 +245,7 @@
     "coursess": {
         "type": "text",
         "value": "Courses",
-        "regex": "/^[A-Za-z\\s&()\\-;,'\"./?]*$/",
+        "regex": "^[A-Za-z\\s&()\\-;,'\".\\/\\?]*$",
         "errorMessage": "Only characters and Symbols ( &-;'\",./?+) are allowed",
         "minLength": 1,
         "maxLength": 250

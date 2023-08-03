@@ -1,12 +1,12 @@
 package com.ModelContent.modelContent.service.Implementation;
 
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.File;
+import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
@@ -34,6 +34,7 @@ public class ContentServiceImpl implements ContentService {
 	@Override
 	public GlobalReponse updateContentModel(ContentModelDTO contentModelDTO, String language)
 			throws IllegalArgumentException, IllegalAccessException {
+		// ContentModel contentModel = convertToEntity(contentModelDTO);
 
 		ContentModel existingContent = loadContentFromFile(language);
 
@@ -41,9 +42,14 @@ public class ContentServiceImpl implements ContentService {
 			return new GlobalReponse(400, "JSON Parse Error");
 		}
 
+		// if (!checkRegexWithValue(existingContent.getCdac_address().getRegex(),
+		// contentModelDTO.getCdac_address().getValue())) {
+		// // throw new Glo("cdac_address does not")
+		// }
+		// Total 56 Keys are request to set
+
 		checkForValidationForContentModelDTO(existingContent, contentModelDTO);
 
-		// Total 56 Keys are request to set
 		existingContent.getCdac_address().setValue(contentModelDTO.getCdac_address().getValue());
 		existingContent.getHave_questions().setValue(contentModelDTO.getHave_questions().getValue());
 		existingContent.getLog_in().setValue(contentModelDTO.getLog_in().getValue());
@@ -107,14 +113,13 @@ public class ContentServiceImpl implements ContentService {
 			return new GlobalReponse(500, "Failed to update data");
 		}
 
+		// return new GlobalReponse(200, "Data updated successfully SSS");
+
 	}
 
 	public boolean checkRegexWithValue(String regex, String value) {
-
 		Pattern pattern = Pattern.compile(regex);
-
 		Matcher matcher = pattern.matcher(value);
-
 		return matcher.matches();
 	}
 
@@ -146,7 +151,11 @@ public class ContentServiceImpl implements ContentService {
 
 	private String getFilePath(String language) {
 		String fileName = language.toLowerCase() + ".json";
-		return "C:\\Users\\samnayakawadi\\Downloads\\" + fileName;
+		// return "C:\\Users\\q\\Desktop\\Dynamic NGEL Backend\\Dynamic NGEL
+		// Backend\\src\\main\\java\\com\\ModelContent\\modelContent\\json\\"
+		// + fileName;
+		// return "C:\\Users\\q\\Desktop\\json file NGEL\\" + fileName;
+		return "C:\\Users\\samnayakawadi\\Downloads\\dynamic_json\\" + fileName;
 	}
 
 	public void checkForValidationForContentModelDTO(ContentModel existingContent, ContentModelDTO contentModelDTO)

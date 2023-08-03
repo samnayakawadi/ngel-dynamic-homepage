@@ -120,7 +120,7 @@ public class ContentModelDTO {
     public TextTypeContentDTO powerby1;
     @Valid
     public TextTypeContentDTO megh1;
-
+    
     public ContentModelDTO(TextTypeContentDTO cdac_address, TextTypeContentDTO have_questions,
             TextTypeContentDTO log_in, TextTypeContentDTO register, FileTypeContentDTO megh_Logo,
             TextTypeContentDTO call_us_now, LinkTypeContentDTO call_us_phone, TextTypeContentDTO enquiry_us,

@@ -27,26 +27,47 @@ public class ContentController {
 	@Autowired
 	private ContentService contentService;
 
-	// @GetMapping("/{language}")
-	// public ContentModel getContentModel(@PathVariable String language) {
-	// return contentService.getContentModel(language);
-	// }
 	@GetMapping("/{language}")
 	public ContentModel getContentModel(@PathVariable String language) {
 		return contentService.getContentModel(language);
 	}
 
-	// @PutMapping("/{language}")
-	// public GlobalReponse updateContentModel(@PathVariable String language,
-	// @RequestBody ContentModelDTO contentModelDTO) {
-	// return contentService.updateContentModel(contentModelDTO, language);
-	// }
 	@PutMapping("/{language}")
-	public GlobalReponse updateContentModel( @PathVariable String language, @Valid @RequestBody ContentModelDTO contentModelDTO) throws IllegalArgumentException, IllegalAccessException {
+	public GlobalReponse updateContentModel( @PathVariable String language, @Valid @RequestBody ContentModelDTO contentModelDTO) throws IllegalArgumentException, IllegalAccessException	 {
 		return contentService.updateContentModel(contentModelDTO, language);
 	}
 
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @GetMapping("/{language}")
+// public ContentModel getContentModel(@PathVariable String language) {
+// return contentService.getContentModel(language);
+// }
+
+// @PutMapping("/{language}")
+// public GlobalReponse updateContentModel(@PathVariable String language,
+// @RequestBody ContentModelDTO contentModelDTO) {
+// return contentService.updateContentModel(contentModelDTO, language);
+// }
 
 // @PostMapping
 // public ContentModel addContentModel(@RequestBody ContentModel contentModel) {

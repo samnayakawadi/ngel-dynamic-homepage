@@ -8,7 +8,7 @@ import com.ModelContent.modelContent.document.ContentModel.textTypeContent.TextT
 
 @EntityScan
 public class ContentModel {
-	// private String language;
+
 	public TextTypeContent cdac_address;
 	public TextTypeContent have_questions;
 	public TextTypeContent log_in;

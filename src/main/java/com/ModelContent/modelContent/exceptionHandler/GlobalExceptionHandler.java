@@ -55,5 +55,4 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(e.getGlobalValidationResponse(),
                 e.getHttpStatus());
     }
-
 }
