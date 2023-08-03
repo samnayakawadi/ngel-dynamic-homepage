@@ -6,10 +6,13 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
-import org.springframework.core.io.ByteArrayResource;
-import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.http.client.MultipartBodyBuilder;
 import org.springframework.stereotype.Component;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -19,6 +22,7 @@ import com.ModelContent.modelContent.response.GlobalReponse;
 import com.ModelContent.modelContent.response.file.FileData;
 import com.ModelContent.modelContent.response.file.FileResponse;
 import com.ModelContent.modelContent.service.main.FileService;
+
 import org.apache.commons.io.FilenameUtils;
 import org.apache.tika.Tika;
 
@@ -28,28 +32,29 @@ public class FileServiceImplementation implements FileService {
 	@Autowired
 	private Environment env;
 
-	public byte[] getSanitizedImage(MultipartFile image) throws IOException {
-		try {
-			return WebClient.builder()
-					.baseUrl("http://meghs3.hyderabad.cdac.in:5000")
-					.build().post()
-					.uri("/imrecons")
-					.contentType(MediaType.MULTIPART_FORM_DATA)
-					.body(BodyInserters.fromMultipartData("image",new ByteArrayResource(image.getBytes()) {
-								@Override
-								public String getFilename() {
-									return image.getOriginalFilename();
-								}
-							}))
-					.retrieve()
-					.bodyToMono(byte[].class)
-					.block();
-		} catch (Exception e) {
-			System.out.println("Sanitization Error : " + e.getMessage());
-			throw new GlobalCustomException(new GlobalReponse(500, "Error during Sanitizing Image"),
-					HttpStatus.INTERNAL_SERVER_ERROR);
-		}
-	}
+	private WebClient webClient;
+	
+    @Autowired
+    public FileServiceImplementation(WebClient.Builder webClientBuilder) {
+        this.webClient = webClientBuilder.baseUrl("http://meghs3.hyderabad.cdac.in:5000").build();
+    }
+
+    public byte[] getSanitizedImage(@RequestParam("image") MultipartFile image) {
+        MultipartBodyBuilder bodyBuilder = new MultipartBodyBuilder();
+        bodyBuilder.part("image", image.getResource())
+                .filename(image.getOriginalFilename())
+                .contentType(MediaType.parseMediaType(image.getContentType()));
+
+        MultiValueMap<String, HttpEntity<?>> parts = bodyBuilder.build();
+
+        return webClient.post()
+                .uri("/imrecons")
+                .header(HttpHeaders.CONTENT_TYPE, MediaType.MULTIPART_FORM_DATA_VALUE)
+                .body(BodyInserters.fromMultipartData(parts))
+                .retrieve()
+                .bodyToMono(byte[].class)
+                .block(); // Block and wait for the Mono to complete
+    }
 
 	@Override
 	public FileResponse addNewFile(MultipartFile multipartFile) throws IOException {
