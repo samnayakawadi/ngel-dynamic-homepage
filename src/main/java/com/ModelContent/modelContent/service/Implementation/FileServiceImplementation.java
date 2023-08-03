@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.MultipartBodyBuilder;
 import org.springframework.stereotype.Component;
@@ -17,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import com.ModelContent.modelContent.config.MD5Hashing;
 import com.ModelContent.modelContent.exceptionHandler.GlobalCustomException;
 import com.ModelContent.modelContent.response.GlobalReponse;
 import com.ModelContent.modelContent.response.file.FileData;
@@ -33,31 +35,49 @@ public class FileServiceImplementation implements FileService {
 	private Environment env;
 
 	private WebClient webClient;
-	
-    @Autowired
-    public FileServiceImplementation(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.baseUrl("http://meghs3.hyderabad.cdac.in:5000").build();
-    }
 
-    public byte[] getSanitizedImage(@RequestParam("image") MultipartFile image) {
-        MultipartBodyBuilder bodyBuilder = new MultipartBodyBuilder();
-        bodyBuilder.part("image", image.getResource())
-                .filename(image.getOriginalFilename())
-                .contentType(MediaType.parseMediaType(image.getContentType()));
+	@Autowired
+	public FileServiceImplementation(WebClient.Builder webClientBuilder) {
+		this.webClient = webClientBuilder.baseUrl("http://meghs3.hyderabad.cdac.in:5000").build();
+	}
 
-        MultiValueMap<String, HttpEntity<?>> parts = bodyBuilder.build();
+	public byte[] getSanitizedImage(@RequestParam("image") MultipartFile image) {
+		MultipartBodyBuilder bodyBuilder = new MultipartBodyBuilder();
+		bodyBuilder.part("image", image.getResource())
+				.filename(image.getOriginalFilename())
+				.contentType(MediaType.parseMediaType(image.getContentType()));
 
-        return webClient.post()
-                .uri("/imrecons")
-                .header(HttpHeaders.CONTENT_TYPE, MediaType.MULTIPART_FORM_DATA_VALUE)
-                .body(BodyInserters.fromMultipartData(parts))
-                .retrieve()
-                .bodyToMono(byte[].class)
-                .block(); // Block and wait for the Mono to complete
-    }
+		MultiValueMap<String, HttpEntity<?>> parts = bodyBuilder.build();
+
+		return webClient.post()
+				.uri("/imrecons")
+				.header(HttpHeaders.CONTENT_TYPE, MediaType.MULTIPART_FORM_DATA_VALUE)
+				.body(BodyInserters.fromMultipartData(parts))
+				.retrieve()
+				.bodyToMono(byte[].class)
+				.block(); // Block and wait for the Mono to complete
+	}
+
+	public void validateFileNameAndExtension(MultipartFile file, String fileHash) {
+		String filename = FilenameUtils.getName(file.getOriginalFilename());
+		String filehash = MD5Hashing.generateMD5(Long.toString(file.getSize()));
+
+		if (filehash.equals(fileHash)) {
+
+			if (filename.split("\\.").length != 2 || FilenameUtils.getExtension(filename) == null) {
+				throw new GlobalCustomException(new GlobalReponse(409, "Error Validating File Extension"),
+						HttpStatus.CONFLICT);
+			}
+		} else {
+			throw new GlobalCustomException(new GlobalReponse(409, "File Hash Incorrect"),
+					HttpStatus.CONFLICT);
+		}
+	}
 
 	@Override
-	public FileResponse addNewFile(MultipartFile multipartFile) throws IOException {
+	public FileResponse addNewFile(MultipartFile multipartFile, String fileHash) throws IOException {
+
+		validateFileNameAndExtension(multipartFile, fileHash);
 
 		Tika tika = new Tika();
 		String mediaType = tika.detect(multipartFile.getBytes());

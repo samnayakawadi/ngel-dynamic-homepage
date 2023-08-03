@@ -9,6 +9,6 @@ import com.ModelContent.modelContent.response.file.FileResponse;
 
 @Service
 public interface FileService {
-    public FileResponse addNewFile(MultipartFile file) throws IOException;
+    public FileResponse addNewFile(MultipartFile file, String fileHash) throws IOException;
 
 }
