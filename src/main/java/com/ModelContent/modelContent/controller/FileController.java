@@ -2,6 +2,8 @@ package com.ModelContent.modelContent.controller;
 
 import java.io.IOException;
 
+import javax.annotation.security.RolesAllowed;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -13,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.ModelContent.modelContent.response.file.FileResponse;
 import com.ModelContent.modelContent.service.main.FileService;
 
-import jakarta.annotation.security.RolesAllowed;
+// import javax.annotation.security.RolesAllowed;
 
 @CrossOrigin(origins = "*")
 @RestController

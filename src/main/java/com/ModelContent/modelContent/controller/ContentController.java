@@ -16,7 +16,7 @@ import com.ModelContent.modelContent.model.ContentModel;
 import com.ModelContent.modelContent.response.GlobalReponse;
 import com.ModelContent.modelContent.service.main.ContentService;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/content")
@@ -36,8 +36,6 @@ public class ContentController {
 	public GlobalReponse updateContentModel( @PathVariable String language, @Valid @RequestBody ContentModelDTO contentModelDTO) throws IllegalArgumentException, IllegalAccessException	 {
 		return contentService.updateContentModel(contentModelDTO, language);
 	}
-
-	
 	
 }
 

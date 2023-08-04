@@ -8,8 +8,8 @@ import java.lang.annotation.Target;
 
 import com.ModelContent.modelContent.validation.common.handlers.ValidateEmptyStringHandler;
 
-import jakarta.validation.Constraint;
-import jakarta.validation.Payload;
+import javax.validation.Constraint;
+import javax.validation.Payload;
 
 @Target({ ElementType.FIELD, ElementType.PARAMETER })
 @Retention(RetentionPolicy.RUNTIME)

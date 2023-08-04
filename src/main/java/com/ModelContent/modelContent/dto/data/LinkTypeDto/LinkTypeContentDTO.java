@@ -2,7 +2,7 @@ package com.ModelContent.modelContent.dto.data.LinkTypeDto;
 
 import com.ModelContent.modelContent.document.ContentModel.linkTypeContent.data.LinkTypeLinkcontentData;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 public class LinkTypeContentDTO {
     @Valid

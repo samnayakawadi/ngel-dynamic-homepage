@@ -1,6 +1,6 @@
 package com.ModelContent.modelContent.dto.data.LinkTypeDto;
 
-import jakarta.validation.constraints.NotNull;
+import javax.validation.constraints.NotNull;
 
 public class LinkTypeTitleContentData {
     @NotNull(message = "Value cannot be empty")

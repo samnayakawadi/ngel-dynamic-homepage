@@ -13,7 +13,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.client.MultipartBodyBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.MultiValueMap;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -36,12 +35,14 @@ public class FileServiceImplementation implements FileService {
 
 	private WebClient webClient;
 
-	@Autowired
 	public FileServiceImplementation(WebClient.Builder webClientBuilder) {
-		this.webClient = webClientBuilder.baseUrl("http://meghs3.hyderabad.cdac.in:5000").build();
+		this.webClient = webClientBuilder
+				.codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(10485760)) // 10MB buffer size
+				.baseUrl("http://meghs3.hyderabad.cdac.in:5000")
+				.build();
 	}
 
-	public byte[] getSanitizedImage(@RequestParam("image") MultipartFile image) {
+	public byte[] getSanitizedImage(MultipartFile image) {
 		MultipartBodyBuilder bodyBuilder = new MultipartBodyBuilder();
 		bodyBuilder.part("image", image.getResource())
 				.filename(image.getOriginalFilename())

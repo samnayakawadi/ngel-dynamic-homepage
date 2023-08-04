@@ -2,8 +2,8 @@ package com.ModelContent.modelContent.validation.common.handlers;
 
 import com.ModelContent.modelContent.validation.common.annotations.ValidateEmptyString;
 
-import jakarta.validation.ConstraintValidator;
-import jakarta.validation.ConstraintValidatorContext;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 
 public class ValidateEmptyStringHandler implements ConstraintValidator<ValidateEmptyString, String> {
     @Override

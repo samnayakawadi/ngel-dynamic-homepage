@@ -4,7 +4,7 @@ import com.ModelContent.modelContent.dto.data.FileTypeContentDTO;
 import com.ModelContent.modelContent.dto.data.TextTypeContentDTO;
 import com.ModelContent.modelContent.dto.data.LinkTypeDto.LinkTypeContentDTO;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 public class ContentModelDTO {
 
