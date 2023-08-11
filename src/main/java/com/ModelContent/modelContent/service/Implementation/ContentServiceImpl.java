@@ -8,6 +8,8 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
@@ -16,6 +18,7 @@ import com.ModelContent.modelContent.document.ContentModel.textTypeContent.TextT
 import com.ModelContent.modelContent.dto.ContentModelDTO;
 import com.ModelContent.modelContent.dto.data.TextTypeContentDTO;
 import com.ModelContent.modelContent.dto.data.LinkTypeDto.LinkTypeContentDTO;
+import com.ModelContent.modelContent.exceptionHandler.GlobalCustomException;
 import com.ModelContent.modelContent.exceptionHandler.GlobalValidationException;
 import com.ModelContent.modelContent.model.ContentModel;
 import com.ModelContent.modelContent.response.GlobalReponse;
@@ -25,6 +28,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Component
 public class ContentServiceImpl implements ContentService {
+
+	@Autowired
+	private Environment env;
 
 	@Override
 	public ContentModel getContentModel(String language) {
@@ -155,7 +161,7 @@ public class ContentServiceImpl implements ContentService {
 		// Backend\\src\\main\\java\\com\\ModelContent\\modelContent\\json\\"
 		// + fileName;
 		// return "C:\\Users\\q\\Desktop\\json file NGEL\\" + fileName;
-		return "C:\\Users\\samnayakawadi\\Downloads\\dynamic_json\\" + fileName;
+		return env.getProperty("content.upload.url") + fileName;
 	}
 
 	public void checkForValidationForContentModelDTO(ContentModel existingContent, ContentModelDTO contentModelDTO)
@@ -202,6 +208,8 @@ public class ContentServiceImpl implements ContentService {
 				i++;
 			}
 		} catch (Exception e) {
+			throw new GlobalCustomException(new GlobalReponse(500, "Error Parsing The JSON"),
+					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
 		if (errors.size() != 0) {
