@@ -4,7 +4,6 @@ import javax.validation.constraints.NotNull;
 
 public class LinkTypeTitleContentData {
     @NotNull(message = "Value cannot be empty")
-
     private String value;
 
     public LinkTypeTitleContentData(String value) {

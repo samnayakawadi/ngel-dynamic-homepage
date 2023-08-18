@@ -1,10 +1,11 @@
 package com.ModelContent.modelContent.dto;
 
+import javax.validation.Valid;
+
 import com.ModelContent.modelContent.dto.data.FileTypeContentDTO;
 import com.ModelContent.modelContent.dto.data.TextTypeContentDTO;
 import com.ModelContent.modelContent.dto.data.LinkTypeDto.LinkTypeContentDTO;
 
-import javax.validation.Valid;
 
 public class ContentModelDTO {
 

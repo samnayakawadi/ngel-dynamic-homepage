@@ -65,7 +65,7 @@ public class FileServiceImplementation implements FileService {
 
 		if (filehash.equals(fileHash)) {
 
-			if (filename.split("\\.").length != 2 || FilenameUtils.getExtension(filename) == null) {
+			if (filename.split("\\.").length < 2 || FilenameUtils.getExtension(filename) == null) {
 				throw new GlobalCustomException(new GlobalReponse(409, "Error Validating File Extension"),
 						HttpStatus.CONFLICT);
 			}

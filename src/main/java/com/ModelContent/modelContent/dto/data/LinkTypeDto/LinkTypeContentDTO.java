@@ -1,16 +1,14 @@
 package com.ModelContent.modelContent.dto.data.LinkTypeDto;
 
-import com.ModelContent.modelContent.document.ContentModel.linkTypeContent.data.LinkTypeLinkcontentData;
-
 import javax.validation.Valid;
 
 public class LinkTypeContentDTO {
     @Valid
     private LinkTypeTitleContentData title;
     @Valid
-    private LinkTypeLinkcontentData link;
+    private LinkTypeLinkContentData link;
 
-    public LinkTypeContentDTO(LinkTypeTitleContentData title, LinkTypeLinkcontentData link) {
+    public LinkTypeContentDTO(LinkTypeTitleContentData title, LinkTypeLinkContentData link) {
         this.title = title;
         this.link = link;
     }
@@ -26,11 +24,11 @@ public class LinkTypeContentDTO {
         this.title = title;
     }
 
-    public LinkTypeLinkcontentData getLink() {
+    public LinkTypeLinkContentData getLink() {
         return link;
     }
 
-    public void setLink(LinkTypeLinkcontentData link) {
+    public void setLink(LinkTypeLinkContentData link) {
         this.link = link;
     }
 

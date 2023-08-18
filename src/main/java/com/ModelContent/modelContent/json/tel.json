@@ -33,7 +33,7 @@
     },
     "megh_Logo": {
         "type": "file",
-        "link": "64929d34fa3ba95cea1e741a",
+        "link": "64c9e935e550bc7994868d5e",
         "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
         "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
         "maxLength": 1
@@ -114,35 +114,35 @@
     },
     "carousel_img1": {
         "type": "file",
-        "link": "64929d55fa3ba95cea1e741b",
+        "link": "64c9e94ce550bc7994868d5f",
         "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
         "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
         "maxLength": 1
     },
     "carousel_img2": {
         "type": "file",
-        "link": "6492a16cfa3ba95cea1e7422",
+        "link": "64c9e961e550bc7994868d60",
         "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
         "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
         "maxLength": 1
     },
     "carousel_img3": {
         "type": "file",
-        "link": "64929d74fa3ba95cea1e741d",
+        "link": "64c9e973e550bc7994868d61",
         "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
         "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
         "maxLength": 1
     },
     "carousel_img4": {
         "type": "file",
-        "link": "64929d8afa3ba95cea1e741e",
+        "link": "64c9e992e550bc7994868d62",
         "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
         "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
         "maxLength": 1
     },
     "carousel_img5": {
         "type": "file",
-        "link": "64929d96fa3ba95cea1e741f",
+        "link": "64c9ea2ce550bc7994868d63",
         "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
         "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
         "maxLength": 1
@@ -197,7 +197,7 @@
     },
     "hOPPA_image": {
         "type": "file",
-        "link": "64929da6fa3ba95cea1e7420",
+        "link": "64c9ea49e550bc7994868d64",
         "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
         "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
         "maxLength": 1

@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 public class TextTypeContentDTO {
 
     @NotNull(message = "Value cannot be null")
-    @Size(min = 1, max = 500, message = "Value should have Min Value of 1 and Max value of 250 characters")
+    @Size(min = 1, max = 600, message = "Value should have Min Value of 1 and Max value of 250 characters")
     @NotEmpty(message = "value can not be empty")
     @NotBlank(message = "Value can no be Blank")
     private String value;

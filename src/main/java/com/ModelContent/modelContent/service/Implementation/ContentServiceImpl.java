@@ -62,9 +62,13 @@ public class ContentServiceImpl implements ContentService {
 		existingContent.getRegister().setValue(contentModelDTO.getRegister().getValue());
 		existingContent.getMegh_Logo().setLink(contentModelDTO.getMegh_Logo().getLink());
 		existingContent.getCall_us_now().setValue(contentModelDTO.getCall_us_now().getValue());
-		existingContent.getCall_us_phone().setLink(contentModelDTO.getCall_us_phone().getLink());
+		existingContent.getCall_us_phone().getTitle()
+				.setValue(contentModelDTO.getCall_us_phone().getTitle().getValue());
+		existingContent.getCall_us_phone().getLink().setValue(contentModelDTO.getCall_us_phone().getLink().getValue());
 		existingContent.getEnquiry_us().setValue(contentModelDTO.getEnquiry_us().getValue());
-		existingContent.getEnquiry_us_id().setLink(contentModelDTO.getEnquiry_us_id().getLink());
+		existingContent.getEnquiry_us_id().getTitle()
+				.setValue(contentModelDTO.getEnquiry_us_id().getTitle().getValue());
+		existingContent.getEnquiry_us_id().getLink().setValue(contentModelDTO.getEnquiry_us_id().getLink().getValue());
 		existingContent.getHome().setValue(contentModelDTO.getHome().getValue());
 		existingContent.getAbout_us().setValue(contentModelDTO.getAbout_us().getValue());
 		existingContent.getCourses().setValue(contentModelDTO.getCourses().getValue());
@@ -106,9 +110,14 @@ public class ContentServiceImpl implements ContentService {
 		existingContent.getCdac_full_address().setValue(contentModelDTO.getCdac_full_address().getValue());
 		existingContent.getCopyright().setValue(contentModelDTO.getCopyright().getValue());
 		existingContent.getDesign_develop().setValue(contentModelDTO.getDesign_develop().getValue());
-		existingContent.getFooterPoweredBy().setLink(contentModelDTO.getFooterPoweredBy().getLink());
-		existingContent.getFooterMeghS().setLink(contentModelDTO.getFooterMeghS().getLink());
-		existingContent.getFooterHelp().setLink(contentModelDTO.getFooterHelp().getLink());
+		existingContent.getFooterPoweredBy().getTitle()
+				.setValue(contentModelDTO.getFooterPoweredBy().getTitle().getValue());
+		existingContent.getFooterPoweredBy().getLink()
+				.setValue(contentModelDTO.getFooterPoweredBy().getLink().getValue());
+		existingContent.getFooterMeghS().getTitle().setValue(contentModelDTO.getFooterMeghS().getTitle().getValue());
+		existingContent.getFooterMeghS().getLink().setValue(contentModelDTO.getFooterMeghS().getLink().getValue());
+		existingContent.getFooterHelp().getTitle().setValue(contentModelDTO.getFooterHelp().getTitle().getValue());
+		existingContent.getFooterHelp().getLink().setValue(contentModelDTO.getFooterHelp().getLink().getValue());
 		existingContent.getPowerby1().setValue(contentModelDTO.getPowerby1().getValue());
 		existingContent.getMegh1().setValue(contentModelDTO.getMegh1().getValue());
 

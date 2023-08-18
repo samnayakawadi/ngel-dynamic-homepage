@@ -15,8 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 import com.ModelContent.modelContent.response.file.FileResponse;
 import com.ModelContent.modelContent.service.main.FileService;
 
-// import javax.annotation.security.RolesAllowed;
-
 @CrossOrigin(origins = "*")
 @RestController
 @Validated
