@@ -2,6 +2,8 @@ package com.ModelContent.modelContent.controller;
 
 import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -29,13 +31,15 @@ public class ContentController {
 
 	@RolesAllowed("admin")
 	@GetMapping("/{language}")
-	public ContentModel getContentModel(@PathVariable String language) {
+	public ContentModel getContentModel(
+			@PathVariable @Pattern(regexp = "^[a-z]+$", message = "Only a-z alphabets are allowed") @Size(min = 1, max = 3, message = "Allowed Characters are 1 to 3") String language) {
 		return contentService.getContentModel(language);
 	}
 
 	@RolesAllowed("admin")
 	@PutMapping("/{language}")
-	public GlobalReponse updateContentModel(@PathVariable String language,
+	public GlobalReponse updateContentModel(
+			@PathVariable @Pattern(regexp = "^[a-z]+$", message = "Only a-z alphabets are allowed") @Size(min = 1, max = 3, message = "Allowed Characters are 1 to 3") String language,
 			@Valid @RequestBody ContentModelDTO contentModelDTO)
 			throws IllegalArgumentException, IllegalAccessException {
 		return contentService.updateContentModel(contentModelDTO, language);

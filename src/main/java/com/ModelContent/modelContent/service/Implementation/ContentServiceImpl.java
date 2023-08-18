@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
@@ -145,9 +146,11 @@ public class ContentServiceImpl implements ContentService {
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
 			return objectMapper.readValue(new File(filePath), ContentModel.class);
-		} catch (IOException e) {
-			e.printStackTrace();
-			return null;
+		} catch (FileNotFoundException e) {
+			throw new GlobalCustomException(new GlobalReponse(404, "File Not Found"), HttpStatus.NOT_FOUND);
+		} catch (Exception e) {
+			throw new GlobalCustomException(new GlobalReponse(500, "Internal Server Error. Desc : " + e.getMessage()),
+					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
 	}
