@@ -1,14 +1,32 @@
-{
-    "properties": [
-        {
-            "name": "content.json.url",
-            "type": "java.lang.String",
-            "description": "This is the path to get the JSONs"
-        },
-        {
-            "name": "content.image.url",
-            "type": "java.lang.String",
-            "description": "This is the path to upload the Images"
-        }
-    ]
-}
+{"properties": [
+  {
+    "name": "content.json.url",
+    "type": "java.lang.String",
+    "description": "This is the path to get the JSONs"
+  },
+  {
+    "name": "content.image.url",
+    "type": "java.lang.String",
+    "description": "This is the path to upload the Images"
+  },
+  {
+    "name": "tomcat.ajp.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'tomcat.ajp.secret'"
+  },
+  {
+    "name": "tomcat.ajp.port",
+    "type": "java.lang.String",
+    "description": "A description for 'tomcat.ajp.port'"
+  },
+  {
+    "name": "tomcat.ajp.remoteauthentication",
+    "type": "java.lang.String",
+    "description": "A description for 'tomcat.ajp.remoteauthentication'"
+  },
+  {
+    "name": "tomcat.ajp.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'tomcat.ajp.enabled'"
+  }
+]}
