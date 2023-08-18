@@ -1,0 +1,33 @@
+<configuration>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- <fileNamePattern>C:/Users/samnayakawadi/Downloads/logs/dynamicHomePage/content %d{yyyy-MM-dd}.log</fileNamePattern> -->
+            <fileNamePattern>/home/cdac-megh/assessment/logs/dynamicHomePage/content %d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.ModelContent.modelContent" level="error" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <logger name="com.ModelContent.modelContent" level="warn" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <logger name="com.ModelContent.modelContent" level="info" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
