@@ -1,5 +1,6 @@
 package com.ModelContent.modelContent.controller;
 
+import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,6 @@ import com.ModelContent.modelContent.model.ContentModel;
 import com.ModelContent.modelContent.response.GlobalReponse;
 import com.ModelContent.modelContent.service.main.ContentService;
 
-
 @RestController
 @RequestMapping("/content")
 @CrossOrigin(origins = "*")
@@ -27,14 +27,18 @@ public class ContentController {
 	@Autowired
 	private ContentService contentService;
 
+	@RolesAllowed("admin")
 	@GetMapping("/{language}")
 	public ContentModel getContentModel(@PathVariable String language) {
 		return contentService.getContentModel(language);
 	}
 
+	@RolesAllowed("admin")
 	@PutMapping("/{language}")
-	public GlobalReponse updateContentModel( @PathVariable String language, @Valid @RequestBody ContentModelDTO contentModelDTO) throws IllegalArgumentException, IllegalAccessException	 {
+	public GlobalReponse updateContentModel(@PathVariable String language,
+			@Valid @RequestBody ContentModelDTO contentModelDTO)
+			throws IllegalArgumentException, IllegalAccessException {
 		return contentService.updateContentModel(contentModelDTO, language);
 	}
-	
+
 }

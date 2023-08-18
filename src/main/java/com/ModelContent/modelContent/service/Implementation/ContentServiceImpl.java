@@ -170,7 +170,7 @@ public class ContentServiceImpl implements ContentService {
 		// Backend\\src\\main\\java\\com\\ModelContent\\modelContent\\json\\"
 		// + fileName;
 		// return "C:\\Users\\q\\Desktop\\json file NGEL\\" + fileName;
-		return env.getProperty("content.upload.url") + fileName;
+		return env.getProperty("content.json.url") + fileName;
 	}
 
 	public void checkForValidationForContentModelDTO(ContentModel existingContent, ContentModelDTO contentModelDTO)

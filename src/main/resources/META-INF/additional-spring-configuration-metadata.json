@@ -1,0 +1,14 @@
+{
+    "properties": [
+        {
+            "name": "content.json.url",
+            "type": "java.lang.String",
+            "description": "This is the path to get the JSONs"
+        },
+        {
+            "name": "content.image.url",
+            "type": "java.lang.String",
+            "description": "This is the path to upload the Images"
+        }
+    ]
+}

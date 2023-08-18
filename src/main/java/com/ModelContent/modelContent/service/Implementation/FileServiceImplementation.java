@@ -101,7 +101,7 @@ public class FileServiceImplementation implements FileService {
 
 				// Writing the data into actual file
 				fileOutputStream = new FileOutputStream(
-						env.getProperty("fileUploadURL") + uniqueFileId + "." + fileExtension);
+						env.getProperty("content.image.url") + uniqueFileId + "." + fileExtension);
 				fileOutputStream.write(fileData);
 				fileOutputStream.close();
 			} catch (Exception e) {
