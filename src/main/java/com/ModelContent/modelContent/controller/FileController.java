@@ -25,7 +25,7 @@ public class FileController {
     @Autowired
     FileService fileService;
 
-    @RolesAllowed("instructor")
+    @RolesAllowed("admin")
     @PostMapping("/files/upload")
     public FileResponse addNewFile(@RequestParam("file") MultipartFile file,
             @RequestParam("fileHash") String fileHash)
