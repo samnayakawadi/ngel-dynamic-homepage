@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <title>Page Not Found | Question Authoring</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bulma.css}" />
+</head>
+
+<body>
+    <div
+        className="is-flex is-flex-direction-row is-justify-content-center is-align-content-center has-text-centered has-background-light">
+        <section class="hero is-fullheight">
+            <div class="hero-body is-flex is-flex-direction-row is-justify-content-center">
+                <div class="has-text-centered">
+                    <img th:src="@{/images/404.png}" width="800" alt="Page Not Found" />
+                    <p class="pt-4 title">
+                        Page Not Found
+                    </p>
+                    <p class="subtitle p-3">
+                        The page you are looking for is not present on the server
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

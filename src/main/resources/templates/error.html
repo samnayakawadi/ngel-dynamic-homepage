@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <title>Unknown Error | Question Authoring</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bulma.css}" />
+</head>
+
+<body>
+    <div
+        className="is-flex is-flex-direction-row is-justify-content-center is-align-content-center has-text-centered has-background-light">
+        <section class="hero is-fullheight">
+            <div class="hero-body is-flex is-flex-direction-row is-justify-content-center">
+                <div class="has-text-centered">
+                    <img th:src="@{/images/error.png}" width="500" alt="Unknown Error" />
+                    <p class="pt-4 title">
+                        Unknown Error
+                    </p>
+                    <p class="subtitle p-3">
+                        Something went wrong. Kindly retry
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
