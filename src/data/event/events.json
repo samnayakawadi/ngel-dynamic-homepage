@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "eventImg": "event-01.jpg",
+        "eventDate": "25 March",
+        "eventTitle": "Ratione omnis consequuntur placeae consol.",
+        "eventTime": "7:30pm",
+        "eventLocation": "795 South Park Avenue, CA 94107.",
+        "eventdesc": "Fugiat et aperiam similique, perferendis maiores tenetur voluptatem consequuntur harum unde illo alias mollitia a cumque.",
+        "eventLink": "/event-details"
+    },
+    {
+        "id": "2",
+        "eventImg": "event-02.jpg",
+        "eventDate": "25 March",
+        "eventTitle": "Ratione omnis consequuntur placeae consol.",
+        "eventTime": "7:30pm",
+        "eventLocation": "795 South Park Avenue, CA 94107.",
+        "eventdesc": "Fugiat et aperiam similique, perferendis maiores tenetur voluptatem consequuntur harum unde illo alias mollitia a cumque.",
+        "eventLink": "/event-details"
+    },
+    {
+        "id": "3",
+        "eventImg": "event-03.jpg",
+        "eventDate": "25 March",
+        "eventTitle": "Ratione omnis consequuntur placeae consol.",
+        "eventTime": "7:30pm",
+        "eventLocation": "795 South Park Avenue, CA 94107.",
+        "eventdesc": "Fugiat et aperiam similique, perferendis maiores tenetur voluptatem consequuntur harum unde illo alias mollitia a cumque.",
+        "eventLink": "/event-details"
+    },
+    {
+        "id": "4",
+        "eventImg": "event-04.jpg",
+        "eventDate": "25 March",
+        "eventTitle": "Ratione omnis consequuntur placeae consol.",
+        "eventTime": "7:30pm",
+        "eventLocation": "795 South Park Avenue, CA 94107.",
+        "eventdesc": "Fugiat et aperiam similique, perferendis maiores tenetur voluptatem consequuntur harum unde illo alias mollitia a cumque.",
+        "eventLink": "/event-details"
+    },
+    {
+        "id": "5",
+        "eventImg": "event-05.jpg",
+        "eventDate": "25 March",
+        "eventTitle": "Ratione omnis consequuntur placeae consol.",
+        "eventTime": "7:30pm",
+        "eventLocation": "795 South Park Avenue, CA 94107.",
+        "eventdesc": "Fugiat et aperiam similique, perferendis maiores tenetur voluptatem consequuntur harum unde illo alias mollitia a cumque.",
+        "eventLink": "/event-details"
+    },
+    {
+        "id": "6",
+        "eventImg": "event-06.jpg",
+        "eventDate": "25 March",
+        "eventTitle": "Ratione omnis consequuntur placeae consol.",
+        "eventTime": "7:30pm",
+        "eventLocation": "795 South Park Avenue, CA 94107.",
+        "eventdesc": "Fugiat et aperiam similique, perferendis maiores tenetur voluptatem consequuntur harum unde illo alias mollitia a cumque.",
+        "eventLink": "/event-details"
+    },
+    {
+        "id": "7",
+        "eventImg": "event-07.jpg",
+        "eventDate": "25 March",
+        "eventTitle": "Ratione omnis consequuntur placeae consol.",
+        "eventTime": "7:30pm",
+        "eventLocation": "795 South Park Avenue, CA 94107.",
+        "eventdesc": "Fugiat et aperiam similique, perferendis maiores tenetur voluptatem consequuntur harum unde illo alias mollitia a cumque.",
+        "eventLink": "/event-details"
+    }
+]

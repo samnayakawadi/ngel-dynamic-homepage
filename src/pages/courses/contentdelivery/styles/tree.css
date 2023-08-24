@@ -1,0 +1,149 @@
+/* .App {
+  font-family: sans-serif;
+} */
+
+ul.item {
+  padding: 0;
+  list-style-type: none;
+  
+  /* display: block; */
+}
+/* .item::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f07b";
+}
+.item > .children::before {
+  padding-left: 25px;
+  list-style-type: none;
+  font-family: "Font Awesome 5 Free";
+  content: "\f07b";
+  
+} */
+.item > .children{
+  padding-left: 25px;
+  list-style-type: none;
+  
+}
+.item > .toggler {
+  /* display: inline-block; */
+  cursor: pointer;
+  /* border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 5px; */
+  list-style-type: none;
+  /* font-family: "Font Awesome 5 Free";
+  content: "\f0da"; */
+}
+/* 
+.item::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0da";
+} */
+
+/* ul.item li{ */
+  /* border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 3px; */
+  /* list-style-type: none; */
+  /* vertical-align: middle; */
+  /* padding-top: 3px; */
+/* } */
+
+/* ul.item ul{
+  padding-top: 7px;
+  list-style-type: none;
+} */
+/* .isActive{
+  color: black;
+  text-decoration: none;
+} 
+.isActive:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #616bf8;
+}
+
+span.is-Active{
+  background-color: #785FC6;
+  color: rgb(255, 255, 255);
+} */
+
+
+
+.btn-breadcrumb .btn:not(:last-child):after {
+content: " ";
+display: block;
+width: 0;
+height: 0;
+border-top: 17px solid transparent;
+border-bottom: 17px solid transparent;
+border-left: 10px solid white;
+position: absolute;
+top: 50%;
+margin-top: -17px;
+left: 100%;
+z-index: 3;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+content: " ";
+display: block;
+width: 0;
+height: 0;
+border-top: 17px solid transparent;
+border-bottom: 17px solid transparent;
+border-left: 10px solid rgb(173, 173, 173);
+position: absolute;
+top: 50%;
+margin-top: -17px;
+margin-left: 1px;
+left: 100%;
+z-index: 3;
+}
+
+
+.btn-breadcrumb .btn {
+padding:6px 12px 6px 24px;
+}
+.btn-breadcrumb .btn:first-child {
+padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+padding:6px 18px 6px 24px;
+}
+
+
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+border-left: 10px solid #fff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+border-left: 10px solid #ebebeb;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+border-left: 10px solid #adadad;
+}
+
+/* li:hover{
+  text-decoration: none;
+} */
+
+/* .inactive{
+  color: black;
+  text-decoration: none;
+  background-color: white;
+} */
+/* .item a{
+  color: black;
+  text-decoration: none;
+}
+.item a:hover{
+  color: white;
+  text-decoration: none;
+  background-color: #616bf8;
+}
+.item a.isActive{
+  color: white;
+  background-color: #616bf8;
+} */

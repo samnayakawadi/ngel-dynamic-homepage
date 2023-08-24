@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "productImg": "product-01.jpg",
+        "productTitle": "Product 01",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-30%"
+    },
+    {
+        "id": "2",
+        "productImg": "product-02.jpg",
+        "productTitle": "Product 02",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-25%"
+    },
+    {
+        "id": "3",
+        "productImg": "product-03.jpg",
+        "productTitle": "Product 03",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-27%"
+    },
+    {
+        "id": "4",
+        "productImg": "product-04.jpg",
+        "productTitle": "Product 04",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-15%"
+    },
+    {
+        "id": "5",
+        "productImg": "product-05.jpg",
+        "productTitle": "Product 05",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-21%"
+    },
+    {
+        "id": "6",
+        "productImg": "product-06.jpg",
+        "productTitle": "Product 06",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-17%"
+    },
+    {
+        "id": "7",
+        "productImg": "product-07.jpg",
+        "productTitle": "Product 07",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-36%"
+    },
+    {
+        "id": "8",
+        "productImg": "product-08.jpg",
+        "productTitle": "Product 08",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-29%"
+    },
+    {
+        "id": "9",
+        "productImg": "product-09.jpg",
+        "productTitle": "Product 09",
+        "productUrl": "/product-details",
+        "price": "$99.00",
+        "discount": "-33%"
+    }
+]

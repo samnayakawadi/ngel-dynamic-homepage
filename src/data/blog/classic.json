@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "postImg": "blog_c-01.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "Medison Azar",
+        "postLink": "/blog-details",
+        "postDate": "April 23, 2020",
+        "postCategory": "Web Design",
+        "commentNumber": "23",
+        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic. Sequi obcaecati possimus repudiandae sit omnis accusantium",
+        "authorLink": "/blog-details"
+    },
+    {
+        "id": "2",
+        "postImg": "blog_c-02.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "Medison Azar",
+        "postLink": "/blog-details",
+        "postDate": "April 23, 2020",
+        "postCategory": "Web Design",
+        "commentNumber": "23",
+        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic. Sequi obcaecati possimus repudiandae sit omnis accusantium",
+        "authorLink": "/blog-details"
+    },
+    {
+        "id": "3",
+        "postImg": "blog_c-03.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "Medison Azar",
+        "postLink": "/blog-details",
+        "postDate": "April 23, 2020",
+        "postCategory": "Web Design",
+        "commentNumber": "23",
+        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic. Sequi obcaecati possimus repudiandae sit omnis accusantium",
+        "authorLink": "/blog-details"
+    },
+    {
+        "id": "4",
+        "postImg": "blog_c-04.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "Medison Azar",
+        "postLink": "/blog-details",
+        "postDate": "April 23, 2020",
+        "postCategory": "Web Design",
+        "commentNumber": "23",
+        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic. Sequi obcaecati possimus repudiandae sit omnis accusantium",
+        "authorLink": "/blog-details"
+    }
+]

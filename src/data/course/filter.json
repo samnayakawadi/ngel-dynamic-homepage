@@ -1,0 +1,77 @@
+{
+    "secTitle": "We train to serve and protect",
+    "dataList": [
+        {
+            "id": "1",
+            "targetId": "desi",
+            "imgUrl": "Blend_banner650x433.jpg",
+            "authorImg": "author.jpg",
+            "authorName": "Gauthami",
+            "authorCourses": "13 Courses",
+            "price": "$20",
+            "courseTitle": "BLockchain Technology and applicatioN Development (BLEND)",
+            "courseDesc": "Worldwide, Blockchain technology has brought forward a potential of a paradigm shift in building trusts from using trusted centralized systems to untrusted decentralized systems.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "2",
+            "targetId": "deve",
+            "imgUrl": "Handson_banner650x433.jpg",
+            "authorImg": "author.jpg",
+            "authorName": "Pradeep",
+            "authorCourses": "21 Courses",
+            "price": "$13",
+            "courseTitle": "HArdware desigN & Development for embedded Systems and internet Of thiNgs (HANDS-ON)",
+            "courseDesc": "This course will equip engineering students with the conceptual understanding, design know-how and hands-on development experience for embedded hardware design and development.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "3",
+            "targetId": "seo",
+            "imgUrl": "mentor_banner650x433.jpg",
+            "authorImg": "author.jpg",
+            "authorName": "Pranit",
+            "authorCourses": "26 Courses",
+            "price": "$19",
+            "courseTitle": "Multilingual crossplatform mobile app dEvelopmeNT using react native framewORk and firebase (MENTOR)",
+            "courseDesc": "The course offers a practical theory and hands-on practice sessions with mentorship covering the complete development lifecycle of a multilingual cross-platform mobile app using React Native framework and Firebase.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "4",
+            "targetId": "prog",
+            "imgUrl": "course-4.jpg",
+            "authorImg": "author.jpg",
+            "authorName": "Jim Hunt",
+            "authorCourses": "09 Courses",
+            "price": "$15",
+            "courseTitle": "Zero to Hero in Python 3",
+            "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "5",
+            "targetId": "desi",
+            "imgUrl": "course-5.jpg",
+            "authorImg": "author.jpg",
+            "authorName": "Sara Kim",
+            "authorCourses": "17 Courses",
+            "price": "$21",
+            "courseTitle": "React JS, Angular & Vue JS",
+            "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "6",
+            "targetId": "deve",
+            "imgUrl": "course-6.jpg",
+            "authorImg": "author.jpg",
+            "authorName": "Shon Doe",
+            "authorCourses": "31 Courses",
+            "price": "$24",
+            "courseTitle": "Laravel API Development",
+            "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseLink": "/course-details"
+        }
+    ]
+}

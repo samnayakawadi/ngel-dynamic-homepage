@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "personImage": "team-1.jpg",
+        "personName": "Emily Perrey",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "2",
+        "personImage": "team-2.jpg",
+        "personName": "Justin Timbr",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "3",
+        "personImage": "team-3.jpg",
+        "personName": "Medison White",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "4",
+        "personImage": "team-4.jpg",
+        "personName": "Mark Shadow",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "imgUrl": "pop-course-1.jpg",
+        "price": "$20.00",
+        "courseTitle": "Php & mySql Adv Programming",
+        "courseLink": "/course-details"
+    },
+    {
+        "id": "2",
+        "imgUrl": "pop-course-2.jpg",
+        "price": "$13.00",
+        "courseTitle": "Microsoft Excel for Beginner",
+        "courseLink": "/course-details"
+    },
+    {
+        "id": "3",
+        "imgUrl": "pop-course-3.jpg",
+        "price": "$19.00",
+        "courseTitle": "Digital Marketing Course",
+        "courseLink": "/course-details"
+    },
+    {
+        "id": "4",
+        "imgUrl": "pop-course-4.jpg",
+        "price": "$16.00",
+        "courseTitle": "Beckend Dev With Wordpress",
+        "courseLink": "/course-details"
+    }
+]

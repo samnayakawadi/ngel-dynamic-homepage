@@ -1,0 +1,340 @@
+ul,
+#myUL {
+  list-style-type: none;
+}
+
+.folder {
+  list-style-type: "\1F4C1";
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07b";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.caret-down::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07c";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 20px;
+  color: black;
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.custab {
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-shadow: 3px 3px 2px #ccc;
+  transition: 0.5s;
+}
+
+.custab:hover {
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
+
+.dataTables_wrapper .rdt_TableHead {
+  font-size: 50px;
+}
+
+
+/* Tree */
+
+ul.tree,
+ul.tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.tree ul {
+  margin-left: 10px;
+}
+
+ul.tree li {
+  margin: 0;
+  padding: 0 7px;
+  /* line-height: 0; */
+  color: #369;
+  font-weight: bold;
+  border-left: 2px solid rgb(100, 100, 100);
+}
+
+ul.tree li:last-child {
+  border-left: none;
+}
+
+ul.tree li:before {
+  position: relative;
+  top: -0.3em;
+  height: 2em;
+  width: 15px;
+  color: white;
+  border-bottom: 2px solid rgb(100, 100, 100);
+  content: "";
+  display: inline-block;
+  left: -7px;
+}
+
+ul.tree li:last-child:before {
+  border-left: 2px solid rgb(100, 100, 100);
+}
+
+
+/* ul tree1 for learner course structur */
+
+ul.tree1,
+ul.tree1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.tree1 ul {
+  margin-left: 10px;
+}
+
+ul.tree1 li {
+  margin: 0;
+  padding: 0 7px;
+  /* line-height: 0; */
+  color: #369;
+  font-weight: bold;
+  /* border-left: 2px solid rgb(100, 100, 100); */
+}
+
+ul.tree1 li:last-child {
+  border-left: none;
+}
+
+ul.tree1 li:before {
+  position: relative;
+  /* top: -0.3em;
+  height: 2em;
+  width: 15px; */
+  color: white;
+  /* border-bottom: 2px solid rgb(100, 100, 100); */
+  content: "";
+  display: inline-block;
+  left: -7px;
+}
+
+
+
+/* Footer */
+
+/*Share url code css */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.copy-text1 {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  /* border:1px solid #ddd;
+  border-radius:10px; */
+  display: flex;
+}
+
+.copy-text1 input.text {
+  padding: 10px;
+  font-size: 18px;
+  color: #555;
+  border: none;
+  outline: none;
+  padding-right: 50px;
+}
+
+.copy-text1 button {
+  padding: 10px;
+  background: #5784f5;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.copy-text1 button:active {
+  background: #809ce2;
+}
+
+.copy-text1 button:before {
+  content: "Copied";
+  position: absolute;
+  top: -45px;
+  right: 13px;
+  background: #5c81dc;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  display: none;
+}
+
+.copy-text1 button:after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  right: 43px;
+  width: 10px;
+  height: 10px;
+  background: #5c81dc;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.copy-text1.active button:before,
+.copy-text1.active button:after {
+  display: block;
+}
+
+
+.video-js .vjs-big-play-button {
+  left: 45% !important;
+  top: 45% !important;
+}
+
+
+
+/* icon hover */
+
+.wrap {
+  text-align: left;
+}
+
+.wrap a {
+  color: #fff;
+}
+
+.hover-fx {
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 300ms;
+}
+
+.hover-fx:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px rgb(162, 250, 250);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.hover-fx:hover {
+  background-color: rgb(132, 243, 219);
+  color: #00989A;
+}
+
+.hover-fx:hover:after {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+
+
+.hover-fx1 {
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  color: rgb(0, 0, 0);
+  transition: 300ms;
+}
+
+.hover-fx1:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px rgb(162, 250, 250);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.hover-fx1:hover {
+  background-color: rgb(244, 248, 186);
+  color: #00989A;
+}
+
+.hover-fx1:hover:after {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+
+
+.react-datepicker__input-container input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}

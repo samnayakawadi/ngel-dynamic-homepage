@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/punjab.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Punjab Police Academy</title>
+
+  <!-- Google Fonts -->
+  <link href="assets/css/" rel="stylesheet">
+  <link href="assets/css/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2" rel="stylesheet">
+  <link href="assets/css/KFOmCnqEu92Fr1Mu4mxK.woff2" rel="stylesheet">
+  <link href="assets/css/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2" rel="stylesheet">
+  <link href="assets/css/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" rel="stylesheet">
+
+  <!-- Fontawesome Icon -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css"> -->
+  <link rel="stylesheet" rel="stylesheet" href="assets/css/all.css">
+  
+
+  <!-- For edit Button icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Bootstrap Toggle CSS -->
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+  <!-- Lineawesome Icon -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">   -->
+
+  <!-- FlatIcon -->
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"> -->
+
+  <!-- Modal Video -->
+  <link rel="stylesheet" href="assets/css/modal-video.min.css">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+
+
+</head>
+<style>
+  /* .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    border-bottom: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+    margin-top: 350px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+
+
+  /* .loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+  }
+
+  .loader {
+    left: 50%;
+    margin-left: -4em;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    border-bottom: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  .loader,
+  .loader:after {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.05em;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(360deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  } */
+
+
+  :root {
+    --main-color: #ecf0f1;
+    --point-color: #555;
+    --size: 5px;
+  }
+
+  /* .loader {
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 100000;
+  } */
+
+  /* .loader__element {
+    border-radius: 100%;
+    border: var(--size) solid var(--point-color);
+    margin: calc(var(--size)*2);
+  }
+
+  .loader__element:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+  }
+
+  .loader__element:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+  }
+
+  .loader__element:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+  } */
+
+  /* NEW CSS FOR LOADER */
+  .loader {
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+  }
+
+  .logo_loader {
+    width: auto;
+    height: auto;
+    /* z-index: 1; */
+  }
+
+  /* .logo_spinner {
+    width: 25px;
+    height: auto;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin-top: 60px;
+  } */
+
+  .loader__element_component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader__element {
+    border-radius: 100%;
+    border: var(--size) solid var(--point-color);
+    margin: calc(var(--size)*2);
+  }
+
+  .loader__element:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+    --point-color: #2a166f; 
+  }
+
+  .loader__element:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+    --point-color: #2a166f; 
+  }
+
+  .loader__element:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+    --point-color: #2a166f;
+  }
+
+  /* NEW CSS FOR LOADER */
+
+
+  /* .loader__element:nth-child(4) {
+    animation: preloader .6s ease-in-out alternate .6s infinite;
+  } */
+
+
+  @keyframes preloader {
+    100% {
+      transform: scale(2);
+    }
+  }
+
+  @font-face {
+    font-family: "Raavi";
+    src: local("Raavi"),
+      url("../src/assets/fonts/Raavi.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../css/fa-brands-400.eot");
+    src: url("../css/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../css/fa-brands-400.woff2") format("woff2"), url("../css/fa-brands-400.woff") format("woff"), url("../css/fa-brands-400.ttf") format("truetype"), url("../css/fa-brands-400.svg#fontawesome") format("svg");
+  }
+
+  .fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../css/fa-regular-400.eot");
+    src: url("../css/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../css/fa-regular-400.woff2") format("woff2"), url("../css/fa-regular-400.woff") format("woff"), url("../css/fa-regular-400.ttf") format("truetype"), url("../css/fa-regular-400.svg#fontawesome") format("svg");
+  }
+
+  .far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../css/fa-solid-900.eot");
+    src: url("../css/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../css/fa-solid-900.woff2") format("woff2"), url("../css/fa-solid-900.woff") format("woff"), url("../css/fa-solid-900.ttf") format("truetype"), url("../css/fa-solid-900.svg#fontawesome") format("svg");
+  }
+</style>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <!-- <div class="loader">
+      <span><img src="logo1.png" alt="Logo" class="logo_loader" /></span>
+      <span><img src="processing.gif" alt="spinner" class="logo_spinner" /></span>
+    </div> -->
+
+    <div class="loader">
+      <span><img src="/src/assets/images/logo2.png" alt="Logo" class="logo_loader" /></span>
+      <div class="loader__element_component">
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+      </div>
+      <!-- <span class="loader__element"></span> -->
+    </div>
+    <!-- <div class="loading">
+      <div class="loader"></div>
+    </div> -->
+  </div>
+
+<!-- Bootstrap JS (required for Bootstrap Toggle)
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap Toggle JS -->
+<!-- <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> --> -->
+
+<!-- <script>
+  function toggleOn() {
+    $('#toggle-trigger').bootstrapToggle('on')
+  }
+  function toggleOff() {
+    $('#toggle-trigger').bootstrapToggle('off')  
+  }
+</script> -->
+
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+</body>
+
+</html>

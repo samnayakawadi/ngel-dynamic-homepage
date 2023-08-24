@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "imgUrl": "course-1.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "John Doe",
+        "authorCourses": "13 Courses",
+        "price": "$20",
+        "courseTitle": "Php & mySql Programming",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
+    },
+    {
+        "id": "2",
+        "imgUrl": "course-2.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "Jara Sen",
+        "authorCourses": "21 Courses",
+        "price": "$13",
+        "courseTitle": "Microsoft Excel for Beginner",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
+    },
+    {
+        "id": "3",
+        "imgUrl": "course-3.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "Kim Chang",
+        "authorCourses": "26 Courses",
+        "price": "$19",
+        "courseTitle": "Digital Marketing Course",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
+    },
+    {
+        "id": "4",
+        "imgUrl": "course-4.jpg",
+        "authorImg": "author.jpg",
+        "authorName": "Jim Hunt",
+        "authorCourses": "09 Courses",
+        "price": "$15",
+        "courseTitle": "Zero to Hero in Python 3",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
+    }
+]

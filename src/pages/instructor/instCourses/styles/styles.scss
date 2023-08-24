@@ -1,0 +1,76 @@
+.tree-wrapper {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0 0;
+	align-items: left;
+	position: relative;
+	/* > div {
+		outline: none;
+		&:focus-visible {
+			border-radius: .25rem;
+			box-shadow: 0 0 0 .2rem rgba(49,132,253,.4);
+		}
+	} */
+}
+
+.search {
+	min-width: 30rem;
+	margin-bottom: 1rem;
+}
+
+.tree-item {
+	display: flex !important;
+	text-align: left;
+	position: relative;
+	border: 1px solid #ced4da !important;
+	border-radius: 0.25rem;
+	margin-top: 0 !important;
+	margin-bottom: 0.75rem;
+	padding-left: 1rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.icon1 {
+	margin-right: 0.75rem;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+
+.services {
+	display: flex;
+	justify-content: space-between;
+}
+
+.first-division {
+	display: flex;
+	flex-direction: column;
+	margin: 0 5px 0.5rem 0;
+	width: 100%;
+}
+
+button {
+	background: none;
+	outline: none;
+	cursor: pointer;
+	font-weight: 500;
+	border-radius: 2px;
+	padding: 5px 10px;
+}
+
+.first-division button {
+	align-self: flex-start;
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+	color: rgb(0, 208, 255);
+	border: 1px solid rgb(0, 208, 255);
+}
+
+.second-division button {
+	color: red;
+	border: 1px solid red;
+}

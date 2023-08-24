@@ -1,0 +1,48 @@
+[
+    {
+        "id": "1",
+        "backgroundImage": "0001-1.jpg",
+        "uniqClass": "slider-box slider-box1",
+        "title": "welcome_to_meghSikshak",
+        "desc": "best_courses_in_this_region",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    },
+    {
+        "id": "2",
+        "backgroundImage": "0002-1.jpg",
+        "uniqClass": "slider-box slider-box2 text-right",
+        "title": "welcome_to_meghSikshak",
+        "desc": "best_courses_in_this_region",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    },
+    {
+        "id": "3",
+        "backgroundImage": "0003-1.jpg",
+        "uniqClass": "slider-box slider-box1",
+        "title": "welcome_to_meghSikshak",
+        "desc": "best_courses_in_this_region",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    },
+    {
+        "id": "4",
+        "backgroundImage": "0004-1.jpg",
+        "uniqClass": "slider-box slider-box2 text-right",
+        "title": "welcome_to_meghSikshak",
+        "desc": "best_courses_in_this_region",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    },
+    {
+        "id": "5",
+        "backgroundImage": "0005-1.jpg",
+        "uniqClass": "slider-box slider-box1",
+        "title": "welcome_to_meghSikshak",
+        "desc": "best_courses_in_this_region",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    }
+    
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "faqTitle": " What is the USP or benefits of enrolling to the courses?",
+        "faqDesc": "C-DAC's industry skilling courses are designed, developed and mentored by R&D experts who have vast experience in implementing real time projects. These courses give an insight into end-to-end project life cycle as per industry standards and processes."
+    },
+    {
+        "id": "2",
+        "faqTitle": "Who are eligible for enrolling to the courses?",
+        "faqDesc": "Anyone interested can enroll to the courses. Candidates from Electronics, Electrical, Instrumentation, Computer Science, Information Technology or from any equivalent discipline can enroll."
+    },
+    {
+        "id": "3",
+        "faqTitle": "Do I need to read anything before I attend the course?",
+        "faqDesc": "Yes. All enrolled users are expected to go through an essential module provided as part of the course."
+    }
+]

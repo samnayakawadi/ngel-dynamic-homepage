@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "uniqClass": "box-icon box1",
+        "boxIcon": "las la-thumbs-up",
+        "title": "popular_courses",
+        "subTitle": "popular_courses_desc"
+    },
+    {
+        "id": "2",
+        "uniqClass": "box-icon box2",
+        "boxIcon": "las la-book-reader",
+        "title": "modern_library",
+        "subTitle": "modern_library_desc"
+    },
+    {
+        "id": "3",
+        "uniqClass": "box-icon box3",
+        "boxIcon": "las la-chalkboard-teacher",
+        "title": "qualified_teacher",
+        "subTitle": "qualified_teacher_desc"
+    }
+]

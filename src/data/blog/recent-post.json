@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "imgUrl": "pop-course-1.jpg",
+        "blogDate": "April 12,2020",
+        "blogTitle": "Php & mySql Adv Programming",
+        "blogLink": "/blog-details"
+    },
+    {
+        "id": "2",
+        "imgUrl": "pop-course-2.jpg",
+        "blogDate": "April 12,2020",
+        "blogTitle": "Microsoft Excel for Beginner",
+        "blogLink": "/blog-details"
+    },
+    {
+        "id": "3",
+        "imgUrl": "pop-course-3.jpg",
+        "blogDate": "April 12,2020",
+        "blogTitle": "Digital Marketing Course",
+        "blogLink": "/blog-details"
+    },
+    {
+        "id": "4",
+        "imgUrl": "pop-course-4.jpg",
+        "blogDate": "April 12,2020",
+        "blogTitle": "Beckend Dev With Wordpress",
+        "blogLink": "/blog-details"
+    }
+]

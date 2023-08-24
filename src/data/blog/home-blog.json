@@ -1,0 +1,49 @@
+{
+    "secTitle": "Lets See What We Can Show To You Our Useful Blog Article Post.",
+    "dataList": [
+        {
+            "id": "1",
+            "postImg": "blog-1.jpg",
+            "postLink": "/blog-details",
+            "postDate": "25 Mar",
+            "postTitle": "Libero nulla illo quam iure reiciendis maxime.",
+            "postExcerpt": "Lorem ipsum dolor sit amet consecte adipisicing elit. Quisquam excepturi eum necessitatibus.",
+            "authorLink": "/",
+            "commentLink": "/",
+            "likeLink": "/"
+        },
+        {
+            "id": "2",
+            "postImg": "blog-2.jpg",
+            "postLink": "/blog-details",
+            "postDate": "25 Mar",
+            "postTitle": "Libero nulla illo quam iure reiciendis maxime.",
+            "postExcerpt": "Lorem ipsum dolor sit amet consecte adipisicing elit. Quisquam excepturi eum necessitatibus.",
+            "authorLink": "/",
+            "commentLink": "/",
+            "likeLink": "/"
+        },
+        {
+            "id": "3",
+            "postImg": "blog-3.jpg",
+            "postLink": "/blog-details",
+            "postDate": "25 Mar",
+            "postTitle": "Libero nulla illo quam iure reiciendis maxime.",
+            "postExcerpt": "Lorem ipsum dolor sit amet consecte adipisicing elit. Quisquam excepturi eum necessitatibus.",
+            "authorLink": "/",
+            "commentLink": "/",
+            "likeLink": "/"
+        },
+        {
+            "id": "4",
+            "postImg": "blog-4.jpg",
+            "postLink": "/blog-details",
+            "postDate": "25 Mar",
+            "postTitle": "Libero nulla illo quam iure reiciendis maxime.",
+            "postExcerpt": "Lorem ipsum dolor sit amet consecte adipisicing elit. Quisquam excepturi eum necessitatibus.",
+            "authorLink": "/",
+            "commentLink": "/",
+            "likeLink": "/"
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+[
+    {
+        "id": "1",
+        "personImage": "Gauthami.jpg",
+        "personName": "Gauthami Roja",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "2",
+        "personImage": "pranit.jpg",
+        "personName": "Pranit Jodh",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "3",
+        "personImage": "pradeep.jpg",
+        "personName": "Pradeep Namdev",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "4",
+        "personImage": "team-4.jpg",
+        "personName": " M Uday",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "5",
+        "personImage": "team-5.jpg",
+        "personName": "P Ramu",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "6",
+        "personImage": "team-6.jpg",
+        "personName": "S Kartik",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "7",
+        "personImage": "team-7.jpg",
+        "personName": "Vamsi",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "8",
+        "personImage": "team-8.jpg",
+        "personName": "Vishwanath Reddy",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "9",
+        "personImage": "team-9.jpg",
+        "personName": "M Kumar",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "10",
+        "personImage": "team-10.jpg",
+        "personName": "Alister Cook",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "11",
+        "personImage": "team-11.jpg",
+        "personName": "Sam Perrey",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    },
+    {
+        "id": "12",
+        "personImage": "team-12.jpg",
+        "personName": "Katerin White",
+        "personTitle": "Teacher",
+        "socialLinks": {
+            "facebook": "//www.facebook.com",
+            "twitter": "//www.twitter.com",
+            "linkedin": "//www.linkedin.com",
+            "youtube": "//www.youtube.com"
+        }
+    }
+]

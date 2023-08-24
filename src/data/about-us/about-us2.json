@@ -1,0 +1,21 @@
+{
+    "secTitle": "We Have Experienced Professionals & We Do Our Best To Achieve Your Goal. Your Happiness Is Our First Priority.",
+    "secDesc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus nihil atque possimus aliquam, mollitia tempora neque voluptate debitis illum veniam.",
+    "dataList": [
+        {
+            "iconTitle": "Best Quality Courses",
+            "iconSubtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus nihil atque possimus aliquam"
+        },
+        {
+            "iconTitle": "Best Quality Courses",
+            "iconSubtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus nihil atque possimus aliquam"
+        },
+        {
+            "iconTitle": "Best Quality Courses",
+            "iconSubtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus nihil atque possimus aliquam"
+        }
+    ],
+    "aboutImageOne": "about-2.jpg",
+    "aboutImageTwo": "about-3.jpg",
+    "experianceYear": "15"
+}

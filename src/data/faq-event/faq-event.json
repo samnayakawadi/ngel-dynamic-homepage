@@ -1,0 +1,55 @@
+{
+    "eventDataList": [
+        {
+            "id": "1",
+            "eventDate": "25 March",
+            "eventTitle": "2020 admidion fair going on this week",
+            "eventTime": "5:30pm - 7.00pm",
+            "eventLocation": "Newyork,NY.",
+            "eventdesc": "Lorem ipsum dolor sit amet consectetur. Como Ssee hou",
+            "eventLink": "/event-details"
+        },
+        {
+            "id": "2",
+            "eventDate": "25 March",
+            "eventTitle": "2020 admidion fair going on this week",
+            "eventTime": "5:30pm - 7.00pm",
+            "eventLocation": "Newyork,NY.",
+            "eventdesc": "Lorem ipsum dolor sit amet consectetur. Como Ssee hou",
+            "eventLink": "/event-details"
+        },
+        {
+            "id": "3",
+            "eventDate": "25 March",
+            "eventTitle": "2020 admidion fair going on this week",
+            "eventTime": "5:30pm - 7.00pm",
+            "eventLocation": "Newyork,NY.",
+            "eventdesc": "Lorem ipsum dolor sit amet consectetur. Como Ssee hou",
+            "eventLink": "/event-details"
+        }
+    ],
+    "faqDataList": [
+        {
+            "id": "1",
+            "faqTitle": "faq_titile_1",
+            "faqDesc": "faq_desc_1"
+        },
+        {
+            "id": "2",
+            "faqTitle": "faq_titile_2",
+            "faqDesc": "faq_desc_2"
+        },
+        {
+            "id": "3",
+            "faqTitle": "faq_titile_3",
+            "faqDesc": "faq_desc_3"
+        },
+        {
+            "id": "4",
+            "faqTitle": "faq_titile_4",
+            "faqDesc": "faq_desc_4"
+        }
+    ]
+}
+
+
