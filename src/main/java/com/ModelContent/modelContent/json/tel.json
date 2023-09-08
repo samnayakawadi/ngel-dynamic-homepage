@@ -195,13 +195,6 @@
         "minLength": 1,
         "maxLength": 250
     },
-    "hOPPA_image": {
-        "type": "file",
-        "link": "64c9ea49e550bc7994868d64",
-        "regex": "^([a-zA-Z0-9\\s_\\.\\-:])+(.png|.jpe?g|.gif)$",
-        "errorMessage": "గరిష్ట ఫైల్ పరిమాణం 1MBతో చిత్రాలు మాత్రమే అనుమతించబడతాయి (JPG/PNG/JPEG)",
-        "maxLength": 1
-    },
     "title": {
         "type": "text",
         "value": "పంజాబ్ పోలీస్ అకాడమీ చరిత్ర, ఫిల్లౌర్",

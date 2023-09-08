@@ -84,7 +84,7 @@ public class ContentServiceImpl implements ContentService {
 		existingContent.getModern_library_desc().setValue(contentModelDTO.getModern_library_desc().getValue());
 		existingContent.getQualified_teacher().setValue(contentModelDTO.getQualified_teacher().getValue());
 		existingContent.getQualified_teacher_desc().setValue(contentModelDTO.getQualified_teacher_desc().getValue());
-		existingContent.gethOPPA_image().setLink(contentModelDTO.gethOPPA_image().getLink());
+		// existingContent.gethOPPA_image().setLink(contentModelDTO.gethOPPA_image().getLink());
 		existingContent.getTitle().setValue(contentModelDTO.getTitle().getValue());
 		existingContent.getAbout_desc1().setValue(contentModelDTO.getAbout_desc1().getValue());
 		existingContent.getAbout_desc2().setValue(contentModelDTO.getAbout_desc2().getValue());
@@ -107,7 +107,7 @@ public class ContentServiceImpl implements ContentService {
 		existingContent.getCard_title().setValue(contentModelDTO.getCard_title().getValue());
 		existingContent.getCard_desc().setValue(contentModelDTO.getCard_desc().getValue());
 		existingContent.getCard_btn().setValue(contentModelDTO.getCard_btn().getValue());
-		existingContent.getcA().setValue(contentModelDTO.getcA().getValue());
+		// existingContent.getcA().setValue(contentModelDTO.getcA().getValue());
 		existingContent.getCdac_full_address().setValue(contentModelDTO.getCdac_full_address().getValue());
 		existingContent.getCopyright().setValue(contentModelDTO.getCopyright().getValue());
 		existingContent.getDesign_develop().setValue(contentModelDTO.getDesign_develop().getValue());

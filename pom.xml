@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.ModelContent</groupId>
 	<artifactId>modelContent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>build</version>
 	<name>modelContent</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>

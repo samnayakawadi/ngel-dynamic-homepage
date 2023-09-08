@@ -195,13 +195,6 @@
         "minLength": 1,
         "maxLength": 250
     },
-    "hOPPA_image": {
-        "type": "file",
-        "link": "64c9ea49e550bc7994868d64",
-        "regex": "^([a-zA-Z0-9\\s_\\\\.\\-:])+(.png|.jpe?g|.gif)$",
-        "errorMessage": "Only Images are allowed (JPG/PNG/JPEG) with a maximum file size of 1MB",
-        "maxLength": 1048576
-    },
     "title": {
         "type": "text",
         "value": "HISTORY OF PUNJAB POLICE ACADEMY, PHILLAUR",

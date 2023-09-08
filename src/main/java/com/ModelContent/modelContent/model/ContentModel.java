@@ -32,7 +32,6 @@ public class ContentModel {
 	public TextTypeContent modern_library_desc;
 	public TextTypeContent qualified_teacher;
 	public TextTypeContent qualified_teacher_desc;
-	public FileTypeContent hOPPA_image;
 	public TextTypeContent title;
 	public TextTypeContent about_desc1;
 	public TextTypeContent about_desc2;
@@ -66,27 +65,11 @@ public class ContentModel {
 	public TextTypeContent powerby1;
 	public TextTypeContent megh1;
 
+
 	public ContentModel() {
 	}
-	
-	public ContentModel(TextTypeContent cdac_address, TextTypeContent have_questions, TextTypeContent log_in,TextTypeContent register,
-			FileTypeContent megh_Logo, TextTypeContent call_us_now, LinkTypeContent call_us_phone,
-			TextTypeContent enquiry_us, LinkTypeContent enquiry_us_id, TextTypeContent home, TextTypeContent about_us,
-			TextTypeContent courses, FileTypeContent carousel_img1, FileTypeContent carousel_img2,
-			FileTypeContent carousel_img3, FileTypeContent carousel_img4, FileTypeContent carousel_img5,
-			TextTypeContent popular_courses, TextTypeContent popular_courses_desc, TextTypeContent modern_library,
-			TextTypeContent modern_library_desc, TextTypeContent qualified_teacher,
-			TextTypeContent qualified_teacher_desc, FileTypeContent hOPPA_image, TextTypeContent title,
-			TextTypeContent about_desc1, TextTypeContent about_desc2, TextTypeContent happy_students,
-			TextTypeContent teachers, TextTypeContent coursess, TextTypeContent read_more, TextTypeContent info_title,
-			TextTypeContent view_all_courses, TextTypeContent upcoming, TextTypeContent events,
-			TextTypeContent frequently_ask, TextTypeContent question, TextTypeContent faq_titile_1,
-			TextTypeContent faq_desc_1, TextTypeContent faq_titile_2, TextTypeContent faq_desc_2,
-			TextTypeContent faq_titile_3, TextTypeContent faq_desc_3, TextTypeContent card_title,
-			TextTypeContent card_desc, TextTypeContent card_btn, TextTypeContent cA, TextTypeContent cdac_full_address,
-			TextTypeContent copyright, TextTypeContent design_develop, TextTypeContent usefull_links,
-			LinkTypeContent footerPoweredBy, LinkTypeContent footerMeghS, LinkTypeContent footerHelp,
-			TextTypeContent powerby1, TextTypeContent megh1) {
+
+	public ContentModel(TextTypeContent cdac_address, TextTypeContent have_questions, TextTypeContent log_in, TextTypeContent register, FileTypeContent megh_Logo, TextTypeContent call_us_now, LinkTypeContent call_us_phone, TextTypeContent enquiry_us, LinkTypeContent enquiry_us_id, TextTypeContent home, TextTypeContent about_us, TextTypeContent courses, FileTypeContent carousel_img1, FileTypeContent carousel_img2, FileTypeContent carousel_img3, FileTypeContent carousel_img4, FileTypeContent carousel_img5, TextTypeContent popular_courses, TextTypeContent popular_courses_desc, TextTypeContent modern_library, TextTypeContent modern_library_desc, TextTypeContent qualified_teacher, TextTypeContent qualified_teacher_desc, TextTypeContent title, TextTypeContent about_desc1, TextTypeContent about_desc2, TextTypeContent happy_students, TextTypeContent teachers, TextTypeContent coursess, TextTypeContent read_more, TextTypeContent info_title, TextTypeContent view_all_courses, TextTypeContent upcoming, TextTypeContent events, TextTypeContent frequently_ask, TextTypeContent question, TextTypeContent faq_titile_1, TextTypeContent faq_desc_1, TextTypeContent faq_titile_2, TextTypeContent faq_desc_2, TextTypeContent faq_titile_3, TextTypeContent faq_desc_3, TextTypeContent card_title, TextTypeContent card_desc, TextTypeContent card_btn, TextTypeContent cA, TextTypeContent cdac_full_address, TextTypeContent copyright, TextTypeContent design_develop, TextTypeContent usefull_links, LinkTypeContent footerPoweredBy, LinkTypeContent footerMeghS, LinkTypeContent footerHelp, TextTypeContent powerby1, TextTypeContent megh1) {
 		this.cdac_address = cdac_address;
 		this.have_questions = have_questions;
 		this.log_in = log_in;
@@ -110,7 +93,6 @@ public class ContentModel {
 		this.modern_library_desc = modern_library_desc;
 		this.qualified_teacher = qualified_teacher;
 		this.qualified_teacher_desc = qualified_teacher_desc;
-		this.hOPPA_image = hOPPA_image;
 		this.title = title;
 		this.about_desc1 = about_desc1;
 		this.about_desc2 = about_desc2;
@@ -146,7 +128,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getCdac_address() {
-		return cdac_address;
+		return this.cdac_address;
 	}
 
 	public void setCdac_address(TextTypeContent cdac_address) {
@@ -154,7 +136,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getHave_questions() {
-		return have_questions;
+		return this.have_questions;
 	}
 
 	public void setHave_questions(TextTypeContent have_questions) {
@@ -162,7 +144,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getLog_in() {
-		return log_in;
+		return this.log_in;
 	}
 
 	public void setLog_in(TextTypeContent log_in) {
@@ -170,7 +152,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getRegister() {
-		return register;
+		return this.register;
 	}
 
 	public void setRegister(TextTypeContent register) {
@@ -178,7 +160,7 @@ public class ContentModel {
 	}
 
 	public FileTypeContent getMegh_Logo() {
-		return megh_Logo;
+		return this.megh_Logo;
 	}
 
 	public void setMegh_Logo(FileTypeContent megh_Logo) {
@@ -186,7 +168,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getCall_us_now() {
-		return call_us_now;
+		return this.call_us_now;
 	}
 
 	public void setCall_us_now(TextTypeContent call_us_now) {
@@ -194,7 +176,7 @@ public class ContentModel {
 	}
 
 	public LinkTypeContent getCall_us_phone() {
-		return call_us_phone;
+		return this.call_us_phone;
 	}
 
 	public void setCall_us_phone(LinkTypeContent call_us_phone) {
@@ -202,7 +184,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getEnquiry_us() {
-		return enquiry_us;
+		return this.enquiry_us;
 	}
 
 	public void setEnquiry_us(TextTypeContent enquiry_us) {
@@ -210,7 +192,7 @@ public class ContentModel {
 	}
 
 	public LinkTypeContent getEnquiry_us_id() {
-		return enquiry_us_id;
+		return this.enquiry_us_id;
 	}
 
 	public void setEnquiry_us_id(LinkTypeContent enquiry_us_id) {
@@ -218,7 +200,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getHome() {
-		return home;
+		return this.home;
 	}
 
 	public void setHome(TextTypeContent home) {
@@ -226,7 +208,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getAbout_us() {
-		return about_us;
+		return this.about_us;
 	}
 
 	public void setAbout_us(TextTypeContent about_us) {
@@ -234,7 +216,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getCourses() {
-		return courses;
+		return this.courses;
 	}
 
 	public void setCourses(TextTypeContent courses) {
@@ -242,7 +224,7 @@ public class ContentModel {
 	}
 
 	public FileTypeContent getCarousel_img1() {
-		return carousel_img1;
+		return this.carousel_img1;
 	}
 
 	public void setCarousel_img1(FileTypeContent carousel_img1) {
@@ -250,7 +232,7 @@ public class ContentModel {
 	}
 
 	public FileTypeContent getCarousel_img2() {
-		return carousel_img2;
+		return this.carousel_img2;
 	}
 
 	public void setCarousel_img2(FileTypeContent carousel_img2) {
@@ -258,7 +240,7 @@ public class ContentModel {
 	}
 
 	public FileTypeContent getCarousel_img3() {
-		return carousel_img3;
+		return this.carousel_img3;
 	}
 
 	public void setCarousel_img3(FileTypeContent carousel_img3) {
@@ -266,7 +248,7 @@ public class ContentModel {
 	}
 
 	public FileTypeContent getCarousel_img4() {
-		return carousel_img4;
+		return this.carousel_img4;
 	}
 
 	public void setCarousel_img4(FileTypeContent carousel_img4) {
@@ -274,7 +256,7 @@ public class ContentModel {
 	}
 
 	public FileTypeContent getCarousel_img5() {
-		return carousel_img5;
+		return this.carousel_img5;
 	}
 
 	public void setCarousel_img5(FileTypeContent carousel_img5) {
@@ -282,7 +264,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getPopular_courses() {
-		return popular_courses;
+		return this.popular_courses;
 	}
 
 	public void setPopular_courses(TextTypeContent popular_courses) {
@@ -290,7 +272,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getPopular_courses_desc() {
-		return popular_courses_desc;
+		return this.popular_courses_desc;
 	}
 
 	public void setPopular_courses_desc(TextTypeContent popular_courses_desc) {
@@ -298,7 +280,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getModern_library() {
-		return modern_library;
+		return this.modern_library;
 	}
 
 	public void setModern_library(TextTypeContent modern_library) {
@@ -306,7 +288,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getModern_library_desc() {
-		return modern_library_desc;
+		return this.modern_library_desc;
 	}
 
 	public void setModern_library_desc(TextTypeContent modern_library_desc) {
@@ -314,7 +296,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getQualified_teacher() {
-		return qualified_teacher;
+		return this.qualified_teacher;
 	}
 
 	public void setQualified_teacher(TextTypeContent qualified_teacher) {
@@ -322,23 +304,15 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getQualified_teacher_desc() {
-		return qualified_teacher_desc;
+		return this.qualified_teacher_desc;
 	}
 
 	public void setQualified_teacher_desc(TextTypeContent qualified_teacher_desc) {
 		this.qualified_teacher_desc = qualified_teacher_desc;
 	}
 
-	public FileTypeContent gethOPPA_image() {
-		return hOPPA_image;
-	}
-
-	public void sethOPPA_image(FileTypeContent hOPPA_image) {
-		this.hOPPA_image = hOPPA_image;
-	}
-
 	public TextTypeContent getTitle() {
-		return title;
+		return this.title;
 	}
 
 	public void setTitle(TextTypeContent title) {
@@ -346,7 +320,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getAbout_desc1() {
-		return about_desc1;
+		return this.about_desc1;
 	}
 
 	public void setAbout_desc1(TextTypeContent about_desc1) {
@@ -354,7 +328,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getAbout_desc2() {
-		return about_desc2;
+		return this.about_desc2;
 	}
 
 	public void setAbout_desc2(TextTypeContent about_desc2) {
@@ -362,7 +336,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getHappy_students() {
-		return happy_students;
+		return this.happy_students;
 	}
 
 	public void setHappy_students(TextTypeContent happy_students) {
@@ -370,23 +344,23 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getTeachers() {
-		return teachers;
+		return this.teachers;
 	}
 
 	public void setTeachers(TextTypeContent teachers) {
 		this.teachers = teachers;
 	}
-    
-	 public TextTypeContent getCoursess() {
-		return coursess;
+
+	public TextTypeContent getCoursess() {
+		return this.coursess;
 	}
 
 	public void setCoursess(TextTypeContent coursess) {
 		this.coursess = coursess;
 	}
-	
+
 	public TextTypeContent getRead_more() {
-		return read_more;
+		return this.read_more;
 	}
 
 	public void setRead_more(TextTypeContent read_more) {
@@ -394,7 +368,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getInfo_title() {
-		return info_title;
+		return this.info_title;
 	}
 
 	public void setInfo_title(TextTypeContent info_title) {
@@ -402,7 +376,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getView_all_courses() {
-		return view_all_courses;
+		return this.view_all_courses;
 	}
 
 	public void setView_all_courses(TextTypeContent view_all_courses) {
@@ -410,7 +384,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getUpcoming() {
-		return upcoming;
+		return this.upcoming;
 	}
 
 	public void setUpcoming(TextTypeContent upcoming) {
@@ -418,7 +392,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getEvents() {
-		return events;
+		return this.events;
 	}
 
 	public void setEvents(TextTypeContent events) {
@@ -426,7 +400,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getFrequently_ask() {
-		return frequently_ask;
+		return this.frequently_ask;
 	}
 
 	public void setFrequently_ask(TextTypeContent frequently_ask) {
@@ -434,7 +408,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getQuestion() {
-		return question;
+		return this.question;
 	}
 
 	public void setQuestion(TextTypeContent question) {
@@ -442,7 +416,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getFaq_titile_1() {
-		return faq_titile_1;
+		return this.faq_titile_1;
 	}
 
 	public void setFaq_titile_1(TextTypeContent faq_titile_1) {
@@ -450,7 +424,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getFaq_desc_1() {
-		return faq_desc_1;
+		return this.faq_desc_1;
 	}
 
 	public void setFaq_desc_1(TextTypeContent faq_desc_1) {
@@ -458,7 +432,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getFaq_titile_2() {
-		return faq_titile_2;
+		return this.faq_titile_2;
 	}
 
 	public void setFaq_titile_2(TextTypeContent faq_titile_2) {
@@ -466,7 +440,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getFaq_desc_2() {
-		return faq_desc_2;
+		return this.faq_desc_2;
 	}
 
 	public void setFaq_desc_2(TextTypeContent faq_desc_2) {
@@ -474,7 +448,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getFaq_titile_3() {
-		return faq_titile_3;
+		return this.faq_titile_3;
 	}
 
 	public void setFaq_titile_3(TextTypeContent faq_titile_3) {
@@ -482,7 +456,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getFaq_desc_3() {
-		return faq_desc_3;
+		return this.faq_desc_3;
 	}
 
 	public void setFaq_desc_3(TextTypeContent faq_desc_3) {
@@ -490,7 +464,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getCard_title() {
-		return card_title;
+		return this.card_title;
 	}
 
 	public void setCard_title(TextTypeContent card_title) {
@@ -498,7 +472,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getCard_desc() {
-		return card_desc;
+		return this.card_desc;
 	}
 
 	public void setCard_desc(TextTypeContent card_desc) {
@@ -506,23 +480,23 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getCard_btn() {
-		return card_btn;
+		return this.card_btn;
 	}
 
 	public void setCard_btn(TextTypeContent card_btn) {
 		this.card_btn = card_btn;
 	}
 
-	public TextTypeContent getcA() {
-		return cA;
+	public TextTypeContent getCA() {
+		return this.cA;
 	}
 
-	public void setcA(TextTypeContent cA) {
+	public void setCA(TextTypeContent cA) {
 		this.cA = cA;
 	}
 
 	public TextTypeContent getCdac_full_address() {
-		return cdac_full_address;
+		return this.cdac_full_address;
 	}
 
 	public void setCdac_full_address(TextTypeContent cdac_full_address) {
@@ -530,7 +504,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getCopyright() {
-		return copyright;
+		return this.copyright;
 	}
 
 	public void setCopyright(TextTypeContent copyright) {
@@ -538,7 +512,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getDesign_develop() {
-		return design_develop;
+		return this.design_develop;
 	}
 
 	public void setDesign_develop(TextTypeContent design_develop) {
@@ -546,7 +520,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getUsefull_links() {
-		return usefull_links;
+		return this.usefull_links;
 	}
 
 	public void setUsefull_links(TextTypeContent usefull_links) {
@@ -554,7 +528,7 @@ public class ContentModel {
 	}
 
 	public LinkTypeContent getFooterPoweredBy() {
-		return footerPoweredBy;
+		return this.footerPoweredBy;
 	}
 
 	public void setFooterPoweredBy(LinkTypeContent footerPoweredBy) {
@@ -562,7 +536,7 @@ public class ContentModel {
 	}
 
 	public LinkTypeContent getFooterMeghS() {
-		return footerMeghS;
+		return this.footerMeghS;
 	}
 
 	public void setFooterMeghS(LinkTypeContent footerMeghS) {
@@ -570,7 +544,7 @@ public class ContentModel {
 	}
 
 	public LinkTypeContent getFooterHelp() {
-		return footerHelp;
+		return this.footerHelp;
 	}
 
 	public void setFooterHelp(LinkTypeContent footerHelp) {
@@ -578,7 +552,7 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getPowerby1() {
-		return powerby1;
+		return this.powerby1;
 	}
 
 	public void setPowerby1(TextTypeContent powerby1) {
@@ -586,28 +560,12 @@ public class ContentModel {
 	}
 
 	public TextTypeContent getMegh1() {
-		return megh1;
+		return this.megh1;
 	}
 
 	public void setMegh1(TextTypeContent megh1) {
 		this.megh1 = megh1;
 	}
-
 	
-   
-	
-	
-
-	// public ContentModel(TextTypeContent cdac_address) {
-	// 	this.cdac_address = cdac_address;
-	// }
-
-	// public TextTypeContent getCdac_address() {
-	// 	return this.cdac_address;
-	// }
-
-	// public void setCdac_address(TextTypeContent cdac_address) {
-	// 	this.cdac_address = cdac_address;
-	// }
 
 }

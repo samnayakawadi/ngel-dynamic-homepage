@@ -6,7 +6,6 @@ import com.ModelContent.modelContent.dto.data.FileTypeContentDTO;
 import com.ModelContent.modelContent.dto.data.TextTypeContentDTO;
 import com.ModelContent.modelContent.dto.data.LinkTypeDto.LinkTypeContentDTO;
 
-
 public class ContentModelDTO {
 
     @Valid
@@ -55,8 +54,6 @@ public class ContentModelDTO {
     public TextTypeContentDTO qualified_teacher;
     @Valid
     public TextTypeContentDTO qualified_teacher_desc;
-    @Valid
-    public FileTypeContentDTO hOPPA_image;
     @Valid
     public TextTypeContentDTO title;
     @Valid
@@ -121,7 +118,10 @@ public class ContentModelDTO {
     public TextTypeContentDTO powerby1;
     @Valid
     public TextTypeContentDTO megh1;
-    
+
+    public ContentModelDTO() {
+    }
+
     public ContentModelDTO(TextTypeContentDTO cdac_address, TextTypeContentDTO have_questions,
             TextTypeContentDTO log_in, TextTypeContentDTO register, FileTypeContentDTO megh_Logo,
             TextTypeContentDTO call_us_now, LinkTypeContentDTO call_us_phone, TextTypeContentDTO enquiry_us,
@@ -130,18 +130,18 @@ public class ContentModelDTO {
             FileTypeContentDTO carousel_img3, FileTypeContentDTO carousel_img4, FileTypeContentDTO carousel_img5,
             TextTypeContentDTO popular_courses, TextTypeContentDTO popular_courses_desc,
             TextTypeContentDTO modern_library, TextTypeContentDTO modern_library_desc,
-            TextTypeContentDTO qualified_teacher, TextTypeContentDTO qualified_teacher_desc,
-            FileTypeContentDTO hOPPA_image, TextTypeContentDTO title, TextTypeContentDTO about_desc1,
-            TextTypeContentDTO about_desc2, TextTypeContentDTO happy_students, TextTypeContentDTO teachers,
-            TextTypeContentDTO coursess, TextTypeContentDTO read_more, TextTypeContentDTO info_title,
-            TextTypeContentDTO view_all_courses, TextTypeContentDTO upcoming, TextTypeContentDTO events,
-            TextTypeContentDTO frequently_ask, TextTypeContentDTO question, TextTypeContentDTO faq_titile_1,
-            TextTypeContentDTO faq_desc_1, TextTypeContentDTO faq_titile_2, TextTypeContentDTO faq_desc_2,
-            TextTypeContentDTO faq_titile_3, TextTypeContentDTO faq_desc_3, TextTypeContentDTO card_title,
-            TextTypeContentDTO card_desc, TextTypeContentDTO card_btn, TextTypeContentDTO cA,
-            TextTypeContentDTO cdac_full_address, TextTypeContentDTO copyright, TextTypeContentDTO design_develop,
-            TextTypeContentDTO usefull_links, LinkTypeContentDTO footerPoweredBy, LinkTypeContentDTO footerMeghS,
-            LinkTypeContentDTO footerHelp, TextTypeContentDTO powerby1, TextTypeContentDTO megh1) {
+            TextTypeContentDTO qualified_teacher, TextTypeContentDTO qualified_teacher_desc, TextTypeContentDTO title,
+            TextTypeContentDTO about_desc1, TextTypeContentDTO about_desc2, TextTypeContentDTO happy_students,
+            TextTypeContentDTO teachers, TextTypeContentDTO coursess, TextTypeContentDTO read_more,
+            TextTypeContentDTO info_title, TextTypeContentDTO view_all_courses, TextTypeContentDTO upcoming,
+            TextTypeContentDTO events, TextTypeContentDTO frequently_ask, TextTypeContentDTO question,
+            TextTypeContentDTO faq_titile_1, TextTypeContentDTO faq_desc_1, TextTypeContentDTO faq_titile_2,
+            TextTypeContentDTO faq_desc_2, TextTypeContentDTO faq_titile_3, TextTypeContentDTO faq_desc_3,
+            TextTypeContentDTO card_title, TextTypeContentDTO card_desc, TextTypeContentDTO card_btn,
+            TextTypeContentDTO cA, TextTypeContentDTO cdac_full_address, TextTypeContentDTO copyright,
+            TextTypeContentDTO design_develop, TextTypeContentDTO usefull_links, LinkTypeContentDTO footerPoweredBy,
+            LinkTypeContentDTO footerMeghS, LinkTypeContentDTO footerHelp, TextTypeContentDTO powerby1,
+            TextTypeContentDTO megh1) {
         this.cdac_address = cdac_address;
         this.have_questions = have_questions;
         this.log_in = log_in;
@@ -165,7 +165,6 @@ public class ContentModelDTO {
         this.modern_library_desc = modern_library_desc;
         this.qualified_teacher = qualified_teacher;
         this.qualified_teacher_desc = qualified_teacher_desc;
-        this.hOPPA_image = hOPPA_image;
         this.title = title;
         this.about_desc1 = about_desc1;
         this.about_desc2 = about_desc2;
@@ -200,11 +199,8 @@ public class ContentModelDTO {
         this.megh1 = megh1;
     }
 
-    public ContentModelDTO() {
-    }
-
     public TextTypeContentDTO getCdac_address() {
-        return cdac_address;
+        return this.cdac_address;
     }
 
     public void setCdac_address(TextTypeContentDTO cdac_address) {
@@ -212,7 +208,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getHave_questions() {
-        return have_questions;
+        return this.have_questions;
     }
 
     public void setHave_questions(TextTypeContentDTO have_questions) {
@@ -220,7 +216,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getLog_in() {
-        return log_in;
+        return this.log_in;
     }
 
     public void setLog_in(TextTypeContentDTO log_in) {
@@ -228,7 +224,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getRegister() {
-        return register;
+        return this.register;
     }
 
     public void setRegister(TextTypeContentDTO register) {
@@ -236,7 +232,7 @@ public class ContentModelDTO {
     }
 
     public FileTypeContentDTO getMegh_Logo() {
-        return megh_Logo;
+        return this.megh_Logo;
     }
 
     public void setMegh_Logo(FileTypeContentDTO megh_Logo) {
@@ -244,7 +240,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getCall_us_now() {
-        return call_us_now;
+        return this.call_us_now;
     }
 
     public void setCall_us_now(TextTypeContentDTO call_us_now) {
@@ -252,7 +248,7 @@ public class ContentModelDTO {
     }
 
     public LinkTypeContentDTO getCall_us_phone() {
-        return call_us_phone;
+        return this.call_us_phone;
     }
 
     public void setCall_us_phone(LinkTypeContentDTO call_us_phone) {
@@ -260,7 +256,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getEnquiry_us() {
-        return enquiry_us;
+        return this.enquiry_us;
     }
 
     public void setEnquiry_us(TextTypeContentDTO enquiry_us) {
@@ -268,7 +264,7 @@ public class ContentModelDTO {
     }
 
     public LinkTypeContentDTO getEnquiry_us_id() {
-        return enquiry_us_id;
+        return this.enquiry_us_id;
     }
 
     public void setEnquiry_us_id(LinkTypeContentDTO enquiry_us_id) {
@@ -276,7 +272,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getHome() {
-        return home;
+        return this.home;
     }
 
     public void setHome(TextTypeContentDTO home) {
@@ -284,7 +280,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getAbout_us() {
-        return about_us;
+        return this.about_us;
     }
 
     public void setAbout_us(TextTypeContentDTO about_us) {
@@ -292,7 +288,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getCourses() {
-        return courses;
+        return this.courses;
     }
 
     public void setCourses(TextTypeContentDTO courses) {
@@ -300,7 +296,7 @@ public class ContentModelDTO {
     }
 
     public FileTypeContentDTO getCarousel_img1() {
-        return carousel_img1;
+        return this.carousel_img1;
     }
 
     public void setCarousel_img1(FileTypeContentDTO carousel_img1) {
@@ -308,7 +304,7 @@ public class ContentModelDTO {
     }
 
     public FileTypeContentDTO getCarousel_img2() {
-        return carousel_img2;
+        return this.carousel_img2;
     }
 
     public void setCarousel_img2(FileTypeContentDTO carousel_img2) {
@@ -316,7 +312,7 @@ public class ContentModelDTO {
     }
 
     public FileTypeContentDTO getCarousel_img3() {
-        return carousel_img3;
+        return this.carousel_img3;
     }
 
     public void setCarousel_img3(FileTypeContentDTO carousel_img3) {
@@ -324,7 +320,7 @@ public class ContentModelDTO {
     }
 
     public FileTypeContentDTO getCarousel_img4() {
-        return carousel_img4;
+        return this.carousel_img4;
     }
 
     public void setCarousel_img4(FileTypeContentDTO carousel_img4) {
@@ -332,7 +328,7 @@ public class ContentModelDTO {
     }
 
     public FileTypeContentDTO getCarousel_img5() {
-        return carousel_img5;
+        return this.carousel_img5;
     }
 
     public void setCarousel_img5(FileTypeContentDTO carousel_img5) {
@@ -340,7 +336,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getPopular_courses() {
-        return popular_courses;
+        return this.popular_courses;
     }
 
     public void setPopular_courses(TextTypeContentDTO popular_courses) {
@@ -348,7 +344,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getPopular_courses_desc() {
-        return popular_courses_desc;
+        return this.popular_courses_desc;
     }
 
     public void setPopular_courses_desc(TextTypeContentDTO popular_courses_desc) {
@@ -356,7 +352,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getModern_library() {
-        return modern_library;
+        return this.modern_library;
     }
 
     public void setModern_library(TextTypeContentDTO modern_library) {
@@ -364,7 +360,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getModern_library_desc() {
-        return modern_library_desc;
+        return this.modern_library_desc;
     }
 
     public void setModern_library_desc(TextTypeContentDTO modern_library_desc) {
@@ -372,7 +368,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getQualified_teacher() {
-        return qualified_teacher;
+        return this.qualified_teacher;
     }
 
     public void setQualified_teacher(TextTypeContentDTO qualified_teacher) {
@@ -380,23 +376,15 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getQualified_teacher_desc() {
-        return qualified_teacher_desc;
+        return this.qualified_teacher_desc;
     }
 
     public void setQualified_teacher_desc(TextTypeContentDTO qualified_teacher_desc) {
         this.qualified_teacher_desc = qualified_teacher_desc;
     }
 
-    public FileTypeContentDTO gethOPPA_image() {
-        return hOPPA_image;
-    }
-
-    public void sethOPPA_image(FileTypeContentDTO hOPPA_image) {
-        this.hOPPA_image = hOPPA_image;
-    }
-
     public TextTypeContentDTO getTitle() {
-        return title;
+        return this.title;
     }
 
     public void setTitle(TextTypeContentDTO title) {
@@ -404,7 +392,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getAbout_desc1() {
-        return about_desc1;
+        return this.about_desc1;
     }
 
     public void setAbout_desc1(TextTypeContentDTO about_desc1) {
@@ -412,7 +400,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getAbout_desc2() {
-        return about_desc2;
+        return this.about_desc2;
     }
 
     public void setAbout_desc2(TextTypeContentDTO about_desc2) {
@@ -420,7 +408,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getHappy_students() {
-        return happy_students;
+        return this.happy_students;
     }
 
     public void setHappy_students(TextTypeContentDTO happy_students) {
@@ -428,7 +416,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getTeachers() {
-        return teachers;
+        return this.teachers;
     }
 
     public void setTeachers(TextTypeContentDTO teachers) {
@@ -436,7 +424,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getCoursess() {
-        return coursess;
+        return this.coursess;
     }
 
     public void setCoursess(TextTypeContentDTO coursess) {
@@ -444,7 +432,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getRead_more() {
-        return read_more;
+        return this.read_more;
     }
 
     public void setRead_more(TextTypeContentDTO read_more) {
@@ -452,7 +440,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getInfo_title() {
-        return info_title;
+        return this.info_title;
     }
 
     public void setInfo_title(TextTypeContentDTO info_title) {
@@ -460,7 +448,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getView_all_courses() {
-        return view_all_courses;
+        return this.view_all_courses;
     }
 
     public void setView_all_courses(TextTypeContentDTO view_all_courses) {
@@ -468,7 +456,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getUpcoming() {
-        return upcoming;
+        return this.upcoming;
     }
 
     public void setUpcoming(TextTypeContentDTO upcoming) {
@@ -476,7 +464,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getEvents() {
-        return events;
+        return this.events;
     }
 
     public void setEvents(TextTypeContentDTO events) {
@@ -484,7 +472,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getFrequently_ask() {
-        return frequently_ask;
+        return this.frequently_ask;
     }
 
     public void setFrequently_ask(TextTypeContentDTO frequently_ask) {
@@ -492,7 +480,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getQuestion() {
-        return question;
+        return this.question;
     }
 
     public void setQuestion(TextTypeContentDTO question) {
@@ -500,7 +488,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getFaq_titile_1() {
-        return faq_titile_1;
+        return this.faq_titile_1;
     }
 
     public void setFaq_titile_1(TextTypeContentDTO faq_titile_1) {
@@ -508,7 +496,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getFaq_desc_1() {
-        return faq_desc_1;
+        return this.faq_desc_1;
     }
 
     public void setFaq_desc_1(TextTypeContentDTO faq_desc_1) {
@@ -516,7 +504,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getFaq_titile_2() {
-        return faq_titile_2;
+        return this.faq_titile_2;
     }
 
     public void setFaq_titile_2(TextTypeContentDTO faq_titile_2) {
@@ -524,7 +512,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getFaq_desc_2() {
-        return faq_desc_2;
+        return this.faq_desc_2;
     }
 
     public void setFaq_desc_2(TextTypeContentDTO faq_desc_2) {
@@ -532,7 +520,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getFaq_titile_3() {
-        return faq_titile_3;
+        return this.faq_titile_3;
     }
 
     public void setFaq_titile_3(TextTypeContentDTO faq_titile_3) {
@@ -540,7 +528,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getFaq_desc_3() {
-        return faq_desc_3;
+        return this.faq_desc_3;
     }
 
     public void setFaq_desc_3(TextTypeContentDTO faq_desc_3) {
@@ -548,7 +536,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getCard_title() {
-        return card_title;
+        return this.card_title;
     }
 
     public void setCard_title(TextTypeContentDTO card_title) {
@@ -556,7 +544,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getCard_desc() {
-        return card_desc;
+        return this.card_desc;
     }
 
     public void setCard_desc(TextTypeContentDTO card_desc) {
@@ -564,23 +552,23 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getCard_btn() {
-        return card_btn;
+        return this.card_btn;
     }
 
     public void setCard_btn(TextTypeContentDTO card_btn) {
         this.card_btn = card_btn;
     }
 
-    public TextTypeContentDTO getcA() {
-        return cA;
+    public TextTypeContentDTO getCA() {
+        return this.cA;
     }
 
-    public void setcA(TextTypeContentDTO cA) {
+    public void setCA(TextTypeContentDTO cA) {
         this.cA = cA;
     }
 
     public TextTypeContentDTO getCdac_full_address() {
-        return cdac_full_address;
+        return this.cdac_full_address;
     }
 
     public void setCdac_full_address(TextTypeContentDTO cdac_full_address) {
@@ -588,7 +576,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getCopyright() {
-        return copyright;
+        return this.copyright;
     }
 
     public void setCopyright(TextTypeContentDTO copyright) {
@@ -596,7 +584,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getDesign_develop() {
-        return design_develop;
+        return this.design_develop;
     }
 
     public void setDesign_develop(TextTypeContentDTO design_develop) {
@@ -604,7 +592,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getUsefull_links() {
-        return usefull_links;
+        return this.usefull_links;
     }
 
     public void setUsefull_links(TextTypeContentDTO usefull_links) {
@@ -612,7 +600,7 @@ public class ContentModelDTO {
     }
 
     public LinkTypeContentDTO getFooterPoweredBy() {
-        return footerPoweredBy;
+        return this.footerPoweredBy;
     }
 
     public void setFooterPoweredBy(LinkTypeContentDTO footerPoweredBy) {
@@ -620,7 +608,7 @@ public class ContentModelDTO {
     }
 
     public LinkTypeContentDTO getFooterMeghS() {
-        return footerMeghS;
+        return this.footerMeghS;
     }
 
     public void setFooterMeghS(LinkTypeContentDTO footerMeghS) {
@@ -628,7 +616,7 @@ public class ContentModelDTO {
     }
 
     public LinkTypeContentDTO getFooterHelp() {
-        return footerHelp;
+        return this.footerHelp;
     }
 
     public void setFooterHelp(LinkTypeContentDTO footerHelp) {
@@ -636,7 +624,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getPowerby1() {
-        return powerby1;
+        return this.powerby1;
     }
 
     public void setPowerby1(TextTypeContentDTO powerby1) {
@@ -644,7 +632,7 @@ public class ContentModelDTO {
     }
 
     public TextTypeContentDTO getMegh1() {
-        return megh1;
+        return this.megh1;
     }
 
     public void setMegh1(TextTypeContentDTO megh1) {
